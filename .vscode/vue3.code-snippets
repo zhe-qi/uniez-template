@@ -1,5 +1,5 @@
 {
-  "Print unibest Vue3 SFC": {
+  "vue3 template": {
     "scope": "vue",
     "prefix": "vue3",
     "body": [
