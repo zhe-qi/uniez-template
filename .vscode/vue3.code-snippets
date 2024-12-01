@@ -1,0 +1,17 @@
+{
+  "Print unibest Vue3 SFC": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "//$3",
+      "</script>\n",
+      "<template>",
+      "  <view class=\"\">$2</view>",
+      "</template>\n",
+      "<style lang=\"scss\" scoped>",
+      "//$4",
+      "</style>\n",
+    ],
+  }
+}

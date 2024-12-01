@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "formulahendry.auto-complete-tag",
+    "steoates.autoimport",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "antfu.file-nesting",
+    "vincaslt.highlight-matching-tag",
+    "pmneo.tsimporter",
+    "antfu.unocss",
+    "uni-helper.uni-helper-vscode",
+    "vue.volar"
+  ]
+}
