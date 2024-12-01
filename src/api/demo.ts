@@ -3,6 +3,14 @@ import AdapterUniapp from '@alova/adapter-uniapp';
 import { createAlova } from 'alova';
 import vueHook from 'alova/vue';
 
+/**
+ * 这个文件应该是自动生成的，demo.ts提供一个参考作用
+ * 实际开发如果需要根据 swagger openapi 规范自动生成api，那么这个时候 demo.ts 文件仅供参考
+ * 实际开发请根据自动生成的api 下的 index 文件 按照 demo.ts 的写法，根据你自己实际业务需求
+ * 对api下的index.ts进行更改，实际使用请参考alova文档
+ * 以后会考虑降低alova的接入成本，尽量做到开箱即用
+ */
+
 const ContentType = {
   'Content-Type': ContentTypeEnum.JSON,
   'Accept': 'application/json, text/plain, */*',
