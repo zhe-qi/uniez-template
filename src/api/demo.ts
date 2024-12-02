@@ -9,6 +9,8 @@ import vueHook from 'alova/vue';
  * 实际开发请根据自动生成的api 下的 index 文件 按照 demo.ts 的写法，根据你自己实际业务需求
  * 对api下的index.ts进行更改，实际使用请参考alova文档
  * 以后会考虑降低alova的接入成本，尽量做到开箱即用
+ * 请参考文档，并引入 api 的入口文件 至 main.ts 文件中
+ * @see https://alova.js.org/zh-CN/tutorial/getting-started/extension-integration
  */
 
 const ContentType = {

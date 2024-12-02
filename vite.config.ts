@@ -7,6 +7,7 @@ import { getPlugins } from './plugins';
 export default async ({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   const plugins = await getPlugins();
+
   return defineConfig({
     publicDir: './public',
     plugins,
