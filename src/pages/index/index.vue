@@ -7,9 +7,9 @@ const appStore = useAppStore();
 const title = ref('Hello');
 
 const proxy = getCurrentInstance()?.proxy;
-// 如果需要等待全局逻辑执行完毕后，则必须等待 proxy?.$appLaunchedPromise，其他生命周期也是如此。
+// 如果需要等待全局逻辑执行完毕后，则必须等待 proxy?.$appLaunchedPromise，其他生命周期也是如此
 onLoad(async () => {
-  // 在此处可以与全局逻辑并行执行哦。
+  // 在此处可以与全局逻辑并行执行
   await proxy?.$appLaunchedPromise;
   // app中初始化加载逻辑执行完成
 });
