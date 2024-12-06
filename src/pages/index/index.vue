@@ -4,7 +4,7 @@ import TabBar from '@/components/tab-bar/tab-bar.vue';
 const router = useRouter();
 const appStore = useAppStore();
 
-const title = ref('Hello');
+const title = ref(import.meta.env.VITE_APP_TITLE);
 
 const proxy = getCurrentInstance()?.proxy;
 // 如果需要等待全局逻辑执行完毕后，则必须等待 proxy?.$appLaunchedPromise，其他生命周期也是如此

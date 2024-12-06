@@ -8,8 +8,10 @@ declare module '*.vue' {
 }
 
 interface ImportMetaEnv {
-  // vite 环境变量
+  /** 接口请求基础地址 */
   VITE_APP_BASEURL: string
+  /** 应用标题 */
+  VITE_APP_TITLE: string
 }
 
 interface ImportMeta {
