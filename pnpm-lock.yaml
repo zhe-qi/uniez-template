@@ -75,8 +75,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       pinia:
-        specifier: ^2.2.8
-        version: 2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 2.3.0
+        version: 2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       qs:
         specifier: 6.5.3
         version: 6.5.3
@@ -87,8 +87,8 @@ importers:
         specifier: 10.0.5
         version: 10.0.5(vue@3.5.13(typescript@5.7.2))
       z-paging:
-        specifier: ^2.8.3
-        version: 2.8.3
+        specifier: 2.8.4
+        version: 2.8.4
     devDependencies:
       '@alova/wormhole':
         specifier: ^1.0.3
@@ -166,7 +166,7 @@ importers:
         specifier: 0.64.1
         version: 0.64.1(postcss@8.4.49)(rollup@4.28.0)(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.6)(sass@1.78.0)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
       unocss-preset-weapp:
-        specifier: ^0.64.1
+        specifier: 0.64.1
         version: 0.64.1(rollup@4.28.0)
       unplugin-auto-import:
         specifier: ^0.18.6
@@ -4444,15 +4444,12 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pinia@2.2.8:
-    resolution: {integrity: sha512-NRTYy2g+kju5tBRe0oNlriZIbMNvma8ZJrpHsp3qudyiMEA8jMmPPKQ2QMHg0Oc4BkUyQYWagACabrwriCK9HQ==}
+  pinia@2.3.0:
+    resolution: {integrity: sha512-ohZj3jla0LL0OH5PlLTDMzqKiVw2XARmC1XYLdLWIPBMdhDW/123ZWr4zVAhtJm+aoSkFa13pYXskAvAscIkhQ==}
     peerDependencies:
-      '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.5.11
+      vue: ^2.7.0 || ^3.5.11
     peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
       typescript:
         optional: true
 
@@ -5490,8 +5487,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  z-paging@2.8.3:
-    resolution: {integrity: sha512-OQU4fWq4XXPVEIzz7QahN85o5wTXc9jZQckl26jnBNMM99Lx90Owgkc33xUPQ9RiqC5eBOnrordEPp1OOR/40A==}
+  z-paging@2.8.4:
+    resolution: {integrity: sha512-967aWGPZsC9siwIoWtXH6L+9gCoKe29jZtW+AMD9NSfsfymPZjBBYu7owT/siUQyCaaNJ7uUbpAet+YgpMn0xA==}
     engines: {HBuilderX: ^3.0.7}
 
   zwitch@2.0.4:
@@ -11087,13 +11084,15 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)):
+  pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.7.2)
       vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
     optionalDependencies:
       typescript: 5.7.2
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   pirates@4.0.6: {}
 
@@ -12148,6 +12147,6 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  z-paging@2.8.3: {}
+  z-paging@2.8.4: {}
 
   zwitch@2.0.4: {}
