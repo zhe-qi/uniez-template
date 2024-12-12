@@ -24,7 +24,7 @@ interface ListItem {
 }
 
 // Refs
-const paging = ref();
+const paging = ref<ZPagingRef>();
 const dataList = ref<ListItem[]>([]);
 const hideEmptyView = ref(true);
 const completeFunc = ref<(() => void) | null>(null);
@@ -45,23 +45,23 @@ watch(
   { immediate: true },
 );
 
+function generateMockData(size: number) {
+  return Array.from({ length: size }, (_, index) => ({
+    title: `标题${index}`,
+    detail: `详情${index}`,
+    id: Date.now() + index,
+  }));
+}
+
+type ZPagingQueryFn = (pageNo: number | string, pageSize: number | string, from: ZPagingEnums.QueryFrom) => Promise<void>;
+
 // 查询列表数据
-async function queryList(pageNo: number, pageSize: number) {
+const queryList: ZPagingQueryFn = async (_pageNo, pageSize) => {
   try {
-    console.log(pageNo, pageSize);
-    const res = await new Promise<{ data: { list: ListItem[] } }>((resolve) => {
-      setTimeout(() => {
-        resolve({
-          data: {
-            list: Array.from({ length: pageSize }).fill({}).map((_item, index) => ({
-              title: `标题${index}`,
-              detail: `详情${index}`,
-            })),
-          },
-        });
-      }, 150);
-    });
-    paging.value.complete(res.data.list);
+    const mockData = generateMockData(Number(pageSize));
+    await new Promise(resolve => setTimeout(resolve, 150));
+
+    paging.value.complete(mockData);
     hideEmptyView.value = false;
     if (completeFunc.value) {
       completeFunc.value();
@@ -72,7 +72,7 @@ async function queryList(pageNo: number, pageSize: number) {
       completeFunc.value();
     }
   }
-}
+};
 
 // 重新加载
 function reload(completeFn: () => void) {

@@ -13,7 +13,8 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-types",
-      "@types/wechat-miniprogram"
+      "@types/wechat-miniprogram",
+      "z-paging/types"
     ],
     "allowJs": true,
     "noImplicitThis": true,
