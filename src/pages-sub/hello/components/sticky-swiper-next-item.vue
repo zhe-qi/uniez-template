@@ -53,10 +53,8 @@ function generateMockData(size: number) {
   }));
 }
 
-type ZPagingQueryFn = (pageNo: number | string, pageSize: number | string, from: ZPagingEnums.QueryFrom) => Promise<void>;
-
 // 查询列表数据
-const queryList: ZPagingQueryFn = async (_pageNo, pageSize) => {
+async function queryList(_pageNo: number, pageSize: number) {
   try {
     const mockData = generateMockData(Number(pageSize));
     await new Promise(resolve => setTimeout(resolve, 150));
@@ -72,7 +70,7 @@ const queryList: ZPagingQueryFn = async (_pageNo, pageSize) => {
       completeFunc.value();
     }
   }
-};
+}
 
 // 重新加载
 function reload(completeFn: () => void) {
