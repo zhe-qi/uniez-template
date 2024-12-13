@@ -1,5 +1,4 @@
 /** @type {import('eslint').Linter.Config} */
-import process from 'node:process';
 import antfu from '@antfu/eslint-config';
 
 /**
@@ -16,8 +15,8 @@ export default antfu({
     'style/semi-style': ['error', 'last'],
     'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'vue/script-indent': ['error', 2, { baseIndent: 0 }],
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
     'no-useless-catch': 'off',
     'vue/eqeqeq': 'off',
     'eqeqeq': 'off',

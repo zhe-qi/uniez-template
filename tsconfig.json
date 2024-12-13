@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "composite": true,
     "target": "ESNext",
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
@@ -22,10 +21,6 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true
-  },
-  "vueCompilerOptions": {
-    "target": 3,
-    "plugins": ["@uni-helper/uni-types/volar-plugin"]
   },
   "include": [
     "src/**/*.ts",

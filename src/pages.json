@@ -1,5 +1,5 @@
 {
-  "pages": [ // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+  "pages": [
     {
       "name": "Index",
       "path": "pages/index/index",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Test",
-      "path": "pages/test/test",
+      "path": "pages/test-page/test-page",
       "style": {
         "navigationBarTitleText": "测试"
       }

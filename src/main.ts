@@ -3,15 +3,17 @@ import App from './App.vue';
 import { setupRouter } from './router';
 import { store } from './store';
 import { prototypeInterceptor, setupUtils } from './utils';
+
 import 'virtual:uno.css';
 
 export function createApp() {
   const app = createSSRApp(App);
-  app.use(prototypeInterceptor);
+
   app.use(store);
-  setupRouter(app);
+  app.use(prototypeInterceptor);
+
   setupUtils(app);
-  return {
-    app,
-  };
+  setupRouter(app);
+
+  return { app };
 }
