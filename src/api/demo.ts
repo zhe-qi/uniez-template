@@ -1,7 +1,6 @@
 import { ContentTypeEnum, ResultEnum } from '@/enums/httpEnum';
 import AdapterUniapp from '@alova/adapter-uniapp';
 import { createAlova } from 'alova';
-import vueHook from 'alova/vue';
 
 /**
  * 这个文件应该是自动生成的，demo.ts提供一个参考作用
@@ -20,7 +19,6 @@ const ContentType = {
 
 export const alovaInstance = createAlova({
   baseURL: import.meta.env.VITE_APP_BASEURL,
-  statesHook: vueHook,
   ...AdapterUniapp(),
   timeout: 30000,
   beforeRequest: (method) => {
