@@ -56,7 +56,7 @@ function generateMockData(size: number) {
 // 查询列表数据
 async function queryList(_pageNo: number, pageSize: number) {
   try {
-    const mockData = generateMockData(Number(pageSize));
+    const mockData = generateMockData(pageSize);
     await new Promise(resolve => setTimeout(resolve, 150));
 
     paging.value.complete(mockData);

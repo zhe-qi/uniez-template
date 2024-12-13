@@ -11,6 +11,7 @@
     "pmneo.tsimporter",
     "antfu.unocss",
     "uni-helper.uni-helper-vscode",
-    "vue.volar"
+    "vue.volar",
+    "cpylua.language-postcss"
   ]
 }
