@@ -6,12 +6,3 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties extends UtilityTypes {}
   interface ComponentCustomOptions extends Hooks {}
 }
-
-// 为 template 标签添加类型定义
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      template: ParamsType
-    }
-  }
-}

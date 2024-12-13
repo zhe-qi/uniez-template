@@ -13,14 +13,13 @@ function handleClickCustomEvent(desc: string) {
 
 <template>
   <view class="flex flex-col gap-4 p-4">
-    <!-- 我是动态主题之css变量（包含unocss）css js都能用 -->
     <view class="text-primary font-500">
       以下均是动态组件：
     </view>
-    <!-- 循环渲染动态组件目前必须叫cmp，这个item，后续考虑一下动态，后续考虑生成ts支持一下ts，现在没时间 -->
-    <template v-for="cmp in components" :key="cmp">
-      <component :is="cmp" cementing="test" :desc="cmp" @click-custom-event="handleClickCustomEvent">
-        <view>{{ cmp }}</view>
+
+    <template v-for="item in components" :key="item">
+      <component :is="item" cementing="test" :desc="item" @click-custom-event="handleClickCustomEvent">
+        <view>{{ item }}</view>
       </component>
     </template>
   </view>

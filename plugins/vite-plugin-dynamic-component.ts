@@ -136,12 +136,19 @@ export default function componentResolver(options: ComponentResolverOptions): Pl
       code = code.replace(componentRegex, (match, start, attrs, end) => {
         let cementingName = '';
         let slotContent = '';
+        let itemName = '';
 
         // 提取 cementing 属性
         attrs = attrs.replace(/cementing="(.*?)"/, (_, name) => {
           cementingName = name;
           return '';
         });
+
+        // 从 :is 属性中提取 v-for 的项变量名
+        const isMatch = attrs.match(/:is="([^"]+)"/);
+        if (isMatch) {
+          itemName = isMatch[1];
+        }
 
         // 提取插槽内容，确保正确处理结束标签
         if (end.startsWith('>')) {
@@ -167,15 +174,15 @@ export default function componentResolver(options: ComponentResolverOptions): Pl
         });
 
         if (shouldTransform) {
-          // 在指定平台下使用 v-if/v-else-if 方式
+          // 在指定平台下使用 v-if/v-else-if 方式，支持动态变量名
           const transformedComponents = Object.entries(cmps).map(([cmpName, _], index) => {
             const componentKey = `${cementingName}_${cmpName}`;
             const directive = index === 0 ? 'v-if' : 'v-else-if';
-            return `<${componentKey} ${attrs} ${directive}="$isCementing(cmp, '${cmpName}')">${slotContent}</${componentKey}>`;
+            return `<${componentKey} ${attrs} ${directive}="$isCementing(${itemName || 'cmp'}, '${cmpName}')">${slotContent}</${componentKey}>`;
           });
           return transformedComponents.join('\n');
         } else {
-          const isAttr = `:is="$registeredComponents[$resolveCementing(cmp, '${cementingName}')]"`;
+          const isAttr = `:is="$registeredComponents[$resolveCementing(${itemName || 'cmp'}, '${cementingName}')]"`;
           return `<component ${attrs} ${isAttr}>${slotContent}</component>`;
         }
       });

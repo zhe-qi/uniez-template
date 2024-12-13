@@ -1,7 +1,7 @@
 import uni from '@dcloudio/vite-plugin-uni';
 import uniLayouts from '@uni-helper/vite-plugin-uni-layouts';
 import AutoImport from 'unplugin-auto-import/vite';
-import vitePluginDynamicComponent from './vite-plugin-dynamic-component';
+import { plugins } from './config';
 
 export async function getPlugins() {
   const unocss = await import('unocss/vite').then(i => i.default);
@@ -9,17 +9,6 @@ export async function getPlugins() {
   return [
     uniLayouts(),
     uni(),
-    vitePluginDynamicComponent({
-      components: {
-        test: {
-          desc: './components/com-desc.vue',
-          line: './components/com-line.vue',
-          title: './components/com-title.vue',
-          test: '@/components/test-components/test-components.vue',
-        },
-      },
-      debug: false,
-    }),
     unocss(),
     AutoImport({
       imports: [
@@ -36,5 +25,6 @@ export async function getPlugins() {
       dirs: ['src/hooks', 'src/store/modules'],
       vueTemplate: true,
     }),
+    ...plugins,
   ];
 }

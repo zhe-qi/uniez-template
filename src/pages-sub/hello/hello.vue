@@ -9,7 +9,7 @@ const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
 const current = ref(0);
 const pagePaging = ref();
 const tabs = ref();
-const swiperList = ref([]);
+const swiperList = ref<ParamsType[]>([]);
 
 // tabs通知swiper切换
 function tabsChange(index: number) {
@@ -18,7 +18,7 @@ function tabsChange(index: number) {
 
 // 下拉刷新时，通知当前显示的列表进行reload操作
 function onRefresh() {
-  swiperList.value[current.value].reload(() => {
+  swiperList.value[current.value]?.reload(() => {
     // 当当前显示的列表刷新结束，结束当前页面的刷新状态
     pagePaging.value.endRefresh();
   });
@@ -52,7 +52,7 @@ function heightChanged(height: number) {
 function setCurrent(newCurrent: number) {
   if (newCurrent !== current.value) {
     // 切换tab时，将上一个tab的数据清空
-    swiperList.value[current.value].clear();
+    swiperList.value[current.value]?.clear();
   }
   current.value = newCurrent;
 }

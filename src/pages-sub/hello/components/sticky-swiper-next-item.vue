@@ -37,7 +37,7 @@ watch(
       // 懒加载，当滑动到当前的item时，才去加载
       nextTick(() => {
         setTimeout(() => {
-          paging.value.reload();
+          paging.value?.reload();
         }, 100);
       });
     }
@@ -59,13 +59,13 @@ async function queryList(_pageNo: number, pageSize: number) {
     const mockData = generateMockData(pageSize);
     await new Promise(resolve => setTimeout(resolve, 150));
 
-    paging.value.complete(mockData);
+    paging.value?.complete(mockData);
     hideEmptyView.value = false;
     if (completeFunc.value) {
       completeFunc.value();
     }
   } catch (error) {
-    paging.value.complete(false);
+    paging.value?.complete(false);
     if (completeFunc.value) {
       completeFunc.value();
     }
@@ -75,7 +75,7 @@ async function queryList(_pageNo: number, pageSize: number) {
 // 重新加载
 function reload(completeFn: () => void) {
   completeFunc.value = completeFn;
-  paging.value.reload();
+  paging.value?.reload();
 }
 
 // 内容高度变化处理
@@ -87,12 +87,12 @@ function contentHeightChanged(height: number) {
 
 // 加载更多
 function doLoadMore() {
-  paging.value.doLoadMore();
+  paging.value?.doLoadMore();
 }
 
 // 清除数据
 function clear() {
-  paging.value.clear();
+  paging.value?.clear();
   hideEmptyView.value = true;
 }
 
