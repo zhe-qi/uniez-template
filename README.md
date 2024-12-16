@@ -21,6 +21,8 @@
 
 关于 cache 函数，来自一个 uniapp 基础框架 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/tree/master/src/utils/cache，默认缓存7天，如果不需要缓存时间，可以使用uni的缓存api，否则使用 cache 函数，cache 函数功能更强大。
 
+关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代，为了简单性 commitlint 和 husky 不默认集成，stylelint 被 unocss 的 eslint 配置替代。
+
 ## ✨ 特性
 
 ### 🎨 动态主题切换
