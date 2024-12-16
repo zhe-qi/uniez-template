@@ -1,6 +1,6 @@
 # uniapp-template
 
-一个功能强大、简单、开箱即用的 uniapp 模板。目前是几个小时内完成的初始版本,未来会持续完善和增强功能。
+一个功能强大且简单的 uniapp 的 h5、小程序 模板，希望你能够在这个模板中学习到一些有用的东西。
 
 关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 "^zq-(.\*)": "@/components/zq-ui/zq-$1/zq-$1.vue"
 
@@ -24,6 +24,8 @@
 关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代，为了简单性 commitlint 和 husky 不默认集成，stylelint 被 unocss 的 eslint 配置替代。
 
 如果需要鉴权，页面权限在路由处理，按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue proxy上，在页面中使用 v-if。
+
+关于文档，目前提供示例和注释在代码当中，如果要掌握框架那么阅读代码是必须的，代码并不复杂。
 
 ## ✨ 特性
 
