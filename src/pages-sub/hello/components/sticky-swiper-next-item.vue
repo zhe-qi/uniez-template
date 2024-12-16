@@ -17,6 +17,10 @@ const { themeVars } = storeToRefs(appStore);
 
 // 模拟数据
 async function generateMockData(size: number) {
+  if (props.currentIndex % 2 === 1) {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    return [];
+  }
   const res = Array.from({ length: size }, (_, index) => ({
     title: `标题${index}`,
     detail: `详情${index}`,

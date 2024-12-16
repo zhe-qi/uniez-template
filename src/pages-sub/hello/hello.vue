@@ -15,6 +15,7 @@ onLoad((options) => {
   console.log(route.params?.title === options?.title);
 });
 
+const HEADER_HEIGHT = 250;
 const swiperHeight = ref(0);
 const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
 const current = ref(0);
@@ -55,7 +56,7 @@ function swiperAnimationfinish(e: SwiperOnAnimationfinishEvent) {
 function heightChanged(height: number) {
   if (height === 0) {
     // 默认swiper高度为屏幕可用高度-tabsView高度-slot="top"内view的高度
-    height = uni.getSystemInfoSync().windowHeight - rpx2px(80);
+    height = uni.getSystemInfoSync().windowHeight - rpx2px(80) - rpx2px(HEADER_HEIGHT);
   }
   swiperHeight.value = height;
 }
@@ -88,7 +89,7 @@ function rpx2px(rpx: number) {
           {{ title }}
         </zq-navbar>
       </template>
-      <view class="banner-view h-250 flex-center">
+      <view class="banner-view flex-center" :style="{ height: `${HEADER_HEIGHT}rpx` }">
         <view class="flex flex-col">
           <text>下方tab滚动时可吸附在顶部，可左右滑动列表</text>
           <text>模拟数据加载，150ms后加载完成</text>
@@ -103,7 +104,7 @@ function rpx2px(rpx: number) {
           />
         </view>
         <swiper
-          class="h-full" :style="[{ height: `${swiperHeight}px` }]" :current="current"
+          class="h-1000" :style="[{ height: `${swiperHeight}px` }]" :current="current"
           @transition="swiperTransition" @animationfinish="swiperAnimationfinish"
         >
           <swiper-item v-for="(item, index) in tabList" :key="index" class="swiper-item">
