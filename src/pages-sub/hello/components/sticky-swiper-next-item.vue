@@ -21,6 +21,8 @@ async function generateMockData(size: number) {
     title: `标题${index}`,
     detail: `详情${index}`,
     id: Date.now() + index,
+    // 在模板中可以访问到 @/static/logo.png，但是这里需要使用相对路径
+    image: '/static/logo.png',
   }));
   await new Promise(resolve => setTimeout(resolve, 500));
   return res;
@@ -104,12 +106,12 @@ defineExpose({
     <z-paging
       ref="paging" v-model="dataList" use-page-scroll :scrollable="false" :hide-empty-view="hideEmptyView"
       :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false"
-      :style="{ width: '100%', backgroundColor: themeVars['--color-bg'] }" @query="queryList"
-      @content-height-changed="contentHeightChanged"
+      :style="{ width: '100%', backgroundColor: themeVars['--color-bg'] }" auto-show-system-loading
+      @query="queryList" @content-height-changed="contentHeightChanged"
     >
       <!-- box-white 来自于 unocss.config.mts，可以被后面的类名覆盖，例如自带的是p-4但是我改成了 p-2 -->
       <view v-for="(item, index) in dataList" :key="index" class="box-white mt-4 flex gap-2 p-2">
-        <image src="@/static/logo.png" mode="widthFix" class="w-100" />
+        <image :src="item.image" mode="aspectFill" class="h-100 w-100" />
         <view>
           <view class="title">
             {{ item.title }}
@@ -118,7 +120,7 @@ defineExpose({
             {{ item.detail }}
           </view>
         </view>
-        <button type="primary" class="h-fit text-sm">
+        <button type="primary" class="my-auto h-fit text-base">
           按钮
         </button>
       </view>

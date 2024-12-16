@@ -84,7 +84,7 @@ function rpx2px(rpx: number) {
   <view class="content">
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
-        <zq-navbar :left-icon="false">
+        <zq-navbar :left-icon="false" bg="#f5f5f5">
           {{ title }}
         </zq-navbar>
       </template>
