@@ -106,7 +106,7 @@ defineExpose({
 </script>
 
 <template>
-  <view class="content">
+  <view class="content bg-background">
     <z-paging
       ref="paging" v-model="dataList" use-page-scroll :scrollable="false" :hide-empty-view="hideEmptyView"
       :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false"
