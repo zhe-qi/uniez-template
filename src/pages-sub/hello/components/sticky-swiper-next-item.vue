@@ -2,18 +2,16 @@
 import { storeToRefs } from 'pinia';
 
 // Props 定义
-const props = defineProps({
-  tabIndex: {
-    type: Number as PropType<number>,
-    default: 0,
-  },
-  currentIndex: {
-    type: Number as PropType<number>,
-    default: 0,
-  },
-});
+const props = defineProps<{
+  tabIndex: number
+  currentIndex: number
+}>();
+
 // Emits 定义
-const emit = defineEmits(['heightChanged']);
+const emit = defineEmits<{
+  (e: 'heightChanged', height: number): void
+}>();
+
 const appStore = useAppStore();
 const { themeVars } = storeToRefs(appStore);
 

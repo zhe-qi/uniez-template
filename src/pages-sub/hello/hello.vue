@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import type { SwiperOnAnimationfinishEvent, SwiperOnTransitionEvent } from '@uni-helper/uni-app-types';
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
 
@@ -7,9 +8,16 @@ const appStore = useAppStore();
 const swiperHeight = ref(0);
 const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
 const current = ref(0);
-const pagePaging = ref();
+const pagePaging = ref<ZPagingRef>();
 const tabs = ref();
-const swiperList = ref<ParamsType[]>([]);
+
+interface SwiperListItem {
+  reload: (fn: () => void) => void
+  doLoadMore: () => void
+  clear: () => void
+}
+
+const swiperList = ref<SwiperListItem[]>([]);
 
 // tabs通知swiper切换
 function tabsChange(index: number) {
@@ -20,7 +28,7 @@ function tabsChange(index: number) {
 function onRefresh() {
   swiperList.value[current.value]?.reload(() => {
     // 当当前显示的列表刷新结束，结束当前页面的刷新状态
-    pagePaging.value.endRefresh();
+    pagePaging.value?.endRefresh();
   });
 }
 
@@ -30,12 +38,12 @@ function scrolltolower() {
 }
 
 // swiper滑动中
-function swiperTransition(e: any) {
+function swiperTransition(e: SwiperOnTransitionEvent) {
   tabs.value.setDx(e.detail.dx);
 }
 
 // swiper滑动结束
-function swiperAnimationfinish(e: any) {
+function swiperAnimationfinish(e: SwiperOnAnimationfinishEvent) {
   setCurrent(e.detail.current);
   tabs.value.unlockDx();
 }

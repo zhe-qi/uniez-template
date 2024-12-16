@@ -3,7 +3,8 @@
 declare module '*.vue' {
   import type { DefineComponent } from 'vue';
 
-  const component: DefineComponent<object, object, any>;
+  // eslint-disable-next-line ts/no-empty-object-type
+  const component: DefineComponent<{}, {}, any>;
   export default component;
 }
 

@@ -46,7 +46,7 @@ export const alovaInstance = createAlova({
       if (statusCode === ResultEnum.SUCCESS) {
         if (requestType) { return response; }
 
-        const { statusCode: code, errors } = rawData as any;
+        const { statusCode: code, errors } = rawData as ParamsType;
         if (code === ResultEnum.SUCCESS) { return rawData; }
 
         // @ts-expect-error ignore
