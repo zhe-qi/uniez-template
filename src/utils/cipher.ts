@@ -22,9 +22,9 @@ export interface EncryptionParams {
  * AES 加密解密
  */
 export class AesEncryption {
-  private key: lib.WordArray;
+  private key: lib.WordArray | undefined;
 
-  private iv: lib.WordArray;
+  private iv: lib.WordArray | undefined;
 
   constructor(opt: Partial<EncryptionParams> = {}) {
     const { key, iv } = opt;

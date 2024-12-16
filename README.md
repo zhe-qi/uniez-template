@@ -1,6 +1,25 @@
 # uniapp-template
 
-一个功能强大、开箱即用的 uniapp 模板。目前是几个小时内完成的初始版本,未来会持续完善和增强功能。
+一个功能强大、简单、开箱即用的 uniapp 模板。目前是几个小时内完成的初始版本,未来会持续完善和增强功能。
+
+关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 "^zq-(.\*)": "@/components/zq-ui/zq-$1/zq-$1.vue"
+
+关于 vscode 插件，使用 vscode 会提示安装必要的插件，建议全部安装
+
+关于 代码片段，输入 vue3 会自动补全 template，后续考虑加入更多代码片段，因为现在是ai辅助开发的时代，过多的代码片段没有必要，难记。
+
+关于 node 版本，尽量使用英文官网的 lts 版本，否则必须 node18+。
+关于 包管理工具，使用 pnpm，节省我可怜的磁盘空间。
+
+关于 public 文件夹，原则上来说静态图片都应该放在 static 下面，public 的存在是为了放一些需要在web服务器根目录的给某些app嵌套h5要求放一些文件。
+
+关于 hooks，拥有自动导入，定义的 hooks 只要使用 export 导出，就可以自动导入。
+
+关于 api，alova 学习成本相对较高，你可以选择使用你喜欢的方式管理 api，这里并不限制死，可以使用其他封装，然后移除alova 相关依赖，并移除自动导入 useRequest 。如果使用 alova ，推荐使用自动 swagger.json 生成 api，然后参考 demo 内容修改生成后的 /api/index.ts 文件，然后在 main.ts 中导入 /api/index.ts 文件，推荐安装 alova 的 vscode 插件提升开发体验，alova 的 get 请求 注意缓存策略，建议全局忽略get请求缓存，然后改为手动控制。
+
+关于 alova 不 await 或者不 .then 就不执行的情况，使用 useRequest 就行了，否则必须 await 或者 .then 。
+
+关于 cache 函数，来自一个 uniapp 基础框架 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/tree/master/src/utils/cache，默认缓存7天，如果不需要缓存时间，可以使用uni的缓存api，否则使用 cache 函数，cache 函数功能更强大。
 
 ## ✨ 特性
 
@@ -11,8 +30,8 @@
 
 ### ⚡️ 全局等待加载
 
-- 内置全局 loading 机制
-- 优雅处理异步加载状态
+- 优雅处理全局异步状态管理
+- 不阻塞ui渲染，可选并行或等待
 
 ### 🔥 API 自动生成
 
@@ -34,8 +53,7 @@
 ### 🚀 自动引入
 
 - store、hook、Vue 和 uniapp API 自动引入
-- 支持 $ 开头的功能直接使用
-- 完整的类型提示
+- 支持 $ 开头的功能直接使用，并拥有完整的类型提示
 
 ### 🔧 开发体验
 
