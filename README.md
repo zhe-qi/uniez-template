@@ -1,6 +1,6 @@
 # uniapp-template
 
-一个功能强大且简单的 uniapp 的 h5、小程序 模板，希望你能够在这个模板中学习到一些有用的东西。
+一个功能强大且简单的 uniapp 的 h5、小程序 模板。
 
 关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 "^zq-(.\*)": "@/components/zq-ui/zq-$1/zq-$1.vue"
 
