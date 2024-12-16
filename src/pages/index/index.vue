@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 
+const { VITE_APP_TITLE } = import.meta.env;
+
 const router = useRouter();
 const appStore = useAppStore();
 
-const title = ref(import.meta.env.VITE_APP_TITLE);
+const title = ref(VITE_APP_TITLE);
 
 const proxy = getCurrentInstance()?.proxy;
 // 如果需要等待全局逻辑执行完毕后，则必须等待 proxy?.$appLaunchedPromise，其他生命周期也是如此
@@ -17,21 +19,25 @@ onLoad(async () => {
 function toHello() {
   router.push({
     name: 'Hello',
+    params: {
+      title: 'Hello',
+    },
   });
 }
 </script>
 
 <template>
-  <view class="content">
+  <view class="flex-center flex-col">
     <image class="logo" src="/static/logo.png" />
+    <!-- 测试模板全局方法，鼠标移入可以显示其类型 -->
     {{ $formatDate(new Date().getTime()) }}
-    <view class="text-area">
-      <text class="title text-red-500">
+    <view class="flex justify-center">
+      <text class="title mt-4 text-primary font-500">
         {{ title }}
       </text>
     </view>
 
-    <view class="mt-4 flex flex-col gap-4">
+    <view class="mt-8 flex flex-col gap-4">
       <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="toHello">
         跳转分包页面
       </uv-button>
@@ -49,25 +55,9 @@ function toHello() {
   </view>
 </template>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+<!-- 关于为什么使用 postcss 而不是scss，因为 scss 使用 @apply 爆警告，如果你能做到无视警告，请使用scss -->
+<style lang="postcss" scoped>
 .logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
+  @apply mb-10 mx-auto h-200 w-200 mt-[200rpx];
 }
 </style>

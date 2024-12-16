@@ -5,6 +5,16 @@ import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
 
 const appStore = useAppStore();
 
+// 获取路由参数 示例
+const route = useRoute();
+const title = ref('你好');
+onLoad((options) => {
+  if (options?.title) {
+    title.value = options?.title;
+  }
+  console.log(route.params?.title === options?.title);
+});
+
 const swiperHeight = ref(0);
 const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
 const current = ref(0);
@@ -75,7 +85,7 @@ function rpx2px(rpx: number) {
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
         <zq-navbar :left-icon="false">
-          你好
+          {{ title }}
         </zq-navbar>
       </template>
       <view class="banner-view h-250 flex-center">
@@ -87,7 +97,10 @@ function rpx2px(rpx: number) {
       <view>
         <!-- 小程序中直接修改组件style为position: sticky;无效，需要在组件外层套一层view -->
         <view class="sticky top-0 z-100">
-          <z-tabs ref="tabs" :current="current" :list="tabList" :active-color="appStore.themeVars['--primary']" @change="tabsChange" />
+          <z-tabs
+            ref="tabs" :current="current" :list="tabList" :active-color="appStore.themeVars['--primary']"
+            @change="tabsChange"
+          />
         </view>
         <swiper
           class="h-full" :style="[{ height: `${swiperHeight}px` }]" :current="current"
