@@ -78,7 +78,7 @@ function rpx2px(rpx: number) {
           你好
         </zq-navbar>
       </template>
-      <view class="banner-view h-250">
+      <view class="banner-view h-250 flex-center">
         <view class="flex flex-col">
           <text>下方tab滚动时可吸附在顶部，可左右滑动列表</text>
           <text>模拟数据加载，150ms后加载完成</text>
@@ -86,12 +86,11 @@ function rpx2px(rpx: number) {
       </view>
       <view>
         <!-- 小程序中直接修改组件style为position: sticky;无效，需要在组件外层套一层view -->
-        <view style="z-index: 100;position: sticky;top :0;">
-          <!-- 注意！此处的z-tabs为独立的组件，可替换为第三方的tabs，若需要使用z-tabs，请在插件市场搜索z-tabs并引入，否则会报插件找不到的错误 -->
+        <view class="sticky top-0 z-100">
           <z-tabs ref="tabs" :current="current" :list="tabList" :active-color="appStore.themeVars['--primary']" @change="tabsChange" />
         </view>
         <swiper
-          class="swiper" :style="[{ height: `${swiperHeight}px` }]" :current="current"
+          class="h-full" :style="[{ height: `${swiperHeight}px` }]" :current="current"
           @transition="swiperTransition" @animationfinish="swiperAnimationfinish"
         >
           <swiper-item v-for="(item, index) in tabList" :key="index" class="swiper-item">
@@ -113,21 +112,8 @@ function rpx2px(rpx: number) {
 
 <style lang="scss" scoped>
 .banner-view {
+  // 演示css变量用法
   background-color: var(--primary);
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.paging-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.swiper {
-  height: 1000px;
 }
 </style>

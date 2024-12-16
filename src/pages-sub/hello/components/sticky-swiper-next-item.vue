@@ -22,6 +22,7 @@ async function generateMockData(size: number) {
     detail: `详情${index}`,
     id: Date.now() + index,
   }));
+  await new Promise(resolve => setTimeout(resolve, 500));
   return res;
 }
 type ListItem = Awaited<ReturnType<typeof generateMockData>>[number];
@@ -107,12 +108,15 @@ defineExpose({
       @content-height-changed="contentHeightChanged"
     >
       <!-- box-white 来自于 unocss.config.mts，可以被后面的类名覆盖，例如自带的是p-4但是我改成了 p-2 -->
-      <view v-for="(item, index) in dataList" :key="index" class="box-white mt-4 p-2">
-        <view class="title">
-          {{ item.title }}
-        </view>
-        <view class="mt-2 text-2xs">
-          {{ item.detail }}
+      <view v-for="(item, index) in dataList" :key="index" class="box-white mt-4 flex gap-2 p-2">
+        <image src="@/static/logo.png" mode="widthFix" class="w-100" />
+        <view>
+          <view class="title">
+            {{ item.title }}
+          </view>
+          <view class="mt-2 text-2xs">
+            {{ item.detail }}
+          </view>
         </view>
       </view>
     </z-paging>
