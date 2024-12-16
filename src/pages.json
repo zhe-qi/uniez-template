@@ -4,21 +4,30 @@
       "name": "Index",
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "uni-app",
+        "meta": {
+          "ignoreAuth": true
+        }
       }
     },
     {
       "name": "Test",
       "path": "pages/test-page/test-page",
       "style": {
-        "navigationBarTitleText": "测试"
+        "navigationBarTitleText": "测试",
+        "meta": {
+          "ignoreAuth": true
+        }
       }
     },
     {
       "name": "Theme",
       "path": "pages/theme/theme",
       "style": {
-        "navigationBarTitleText": "主题"
+        "navigationBarTitleText": "主题",
+        "meta": {
+          "ignoreAuth": true
+        }
       }
     }
   ],

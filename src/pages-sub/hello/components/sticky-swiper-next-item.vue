@@ -15,11 +15,16 @@ const emit = defineEmits<{
 const appStore = useAppStore();
 const { themeVars } = storeToRefs(appStore);
 
-// 定义类型
-interface ListItem {
-  title: string
-  detail: string
+// 模拟数据
+async function generateMockData(size: number) {
+  const res = Array.from({ length: size }, (_, index) => ({
+    title: `标题${index}`,
+    detail: `详情${index}`,
+    id: Date.now() + index,
+  }));
+  return res;
 }
+type ListItem = Awaited<ReturnType<typeof generateMockData>>[number];
 
 // Refs
 const paging = ref<ZPagingRef>();
@@ -43,21 +48,12 @@ watch(
   { immediate: true },
 );
 
-function generateMockData(size: number) {
-  return Array.from({ length: size }, (_, index) => ({
-    title: `标题${index}`,
-    detail: `详情${index}`,
-    id: Date.now() + index,
-  }));
-}
-
 // 查询列表数据
 async function queryList(_pageNo: number, pageSize: number) {
   try {
-    const mockData = generateMockData(pageSize);
-    await new Promise(resolve => setTimeout(resolve, 150));
-
+    const mockData = await generateMockData(pageSize);
     paging.value?.complete(mockData);
+
     hideEmptyView.value = false;
     if (completeFunc.value) {
       completeFunc.value();

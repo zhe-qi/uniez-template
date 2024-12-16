@@ -12,7 +12,8 @@ function createBeforeEachGuard(router: Router) {
       next();
       return;
     }
-
+    // 如果需要登录，在此写登录逻辑
+    console.log('需要登录');
     next();
   });
 }

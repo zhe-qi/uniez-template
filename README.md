@@ -23,6 +23,8 @@
 
 关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代，为了简单性 commitlint 和 husky 不默认集成，stylelint 被 unocss 的 eslint 配置替代。
 
+如果需要鉴权，页面权限在路由处理，按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue proxy上，在页面中使用 v-if。
+
 ## ✨ 特性
 
 ### 🎨 动态主题切换

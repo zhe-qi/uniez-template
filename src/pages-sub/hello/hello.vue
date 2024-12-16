@@ -10,14 +10,7 @@ const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
 const current = ref(0);
 const pagePaging = ref<ZPagingRef>();
 const tabs = ref();
-
-interface SwiperListItem {
-  reload: (fn: () => void) => void
-  doLoadMore: () => void
-  clear: () => void
-}
-
-const swiperList = ref<SwiperListItem[]>([]);
+const swiperList = ref<InstanceType<typeof StickySwiperNextItem>[]>([]);
 
 // tabs通知swiper切换
 function tabsChange(index: number) {
