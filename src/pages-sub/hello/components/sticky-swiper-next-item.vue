@@ -118,6 +118,9 @@ defineExpose({
             {{ item.detail }}
           </view>
         </view>
+        <button type="primary" class="h-fit text-sm">
+          按钮
+        </button>
       </view>
     </z-paging>
   </view>

@@ -16,6 +16,14 @@ onLaunch(async () => {
 </script>
 
 <style>
+button[type='primary'] {
+  background-color: var(--primary);
+}
+
+button[type='primary']:hover {
+  background-color: var(--primary-hover);
+}
+
 /* 隐藏scroll-view的滚动条 */
 ::-webkit-scrollbar {
   display: none;
