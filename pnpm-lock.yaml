@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@alova/adapter-uniapp':
-        specifier: ^2.0.10
-        version: 2.0.10(alova@3.2.6)
+        specifier: ^2.0.11
+        version: 2.0.11(alova@3.2.7)
       '@alova/shared':
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.1.2
+        version: 1.1.2
       '@climblee/uv-ui':
         specifier: ^1.1.20
         version: 1.1.20
@@ -66,8 +66,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       alova:
-        specifier: ^3.2.6
-        version: 3.2.6
+        specifier: ^3.2.7
+        version: 3.2.7
       crypto-js:
         specifier: ^4.2.0
         version: 4.2.0
@@ -183,13 +183,13 @@ importers:
 
 packages:
 
-  '@alova/adapter-uniapp@2.0.10':
-    resolution: {integrity: sha512-OHfj3eb1T1ZhWUrzQulG9eduPpxGTY0DnsVI+K8jNcmsdfwP6GQD8gNzCLZ9w3yg3WXQvo8Srph0QJnzlBCmzw==}
+  '@alova/adapter-uniapp@2.0.11':
+    resolution: {integrity: sha512-zpEG2c6KWaN0NAj0ZsYq6KZ7lAE6RPnVcwHlPX5dXQ/M9F909BUORc1LohRwivna9l0SMCln6mRSRxj8Fc0pcg==}
     peerDependencies:
       alova: ^3.0.20
 
-  '@alova/shared@1.1.1':
-    resolution: {integrity: sha512-wYEpisfemAaKH9ODLzlFEcDN34tmc1eWrc++r/Axtdvxb4xpiokWQmQtqr+ODEJ90qG4TCuB5MkCCQBxgKf+fg==}
+  '@alova/shared@1.1.2':
+    resolution: {integrity: sha512-8q/gMHFpzm7XYcaUlsyTCMDRRhFnewwheTeObMjPl1+bFdr+wZuBEHEPYIyd8tyzLwfrqpBeonaMN2tlngM8EA==}
 
   '@alova/wormhole@1.0.4':
     resolution: {integrity: sha512-7YCw2OJlc+OrDpbOHlL+MUMtiO7KNFjiIVjxjYt+I6yKOl0s10MlVdRdrhOiDSf1eQu3otwiWuqvl1FjDZh+dg==}
@@ -2450,8 +2450,8 @@ packages:
   alien-signals@0.2.2:
     resolution: {integrity: sha512-cZIRkbERILsBOXTQmMrxc9hgpxglstn69zm+F1ARf4aPAzdAFYd6sBq87ErO0Fj3DV94tglcyHG5kQz9nDC/8A==}
 
-  alova@3.2.6:
-    resolution: {integrity: sha512-PJFExNPfuoa9Bvmp2gbSpmJyqXnpT6kDFQ+UYvpyQjXqAbKW2wcw1KUcKMXdPHO9hkzkGdev1dlZRMYIMFYd8g==}
+  alova@3.2.7:
+    resolution: {integrity: sha512-V0ePERLfCg0/60f/OFbwufG7djA/uzNjSBcxXmnVZAqGIzVXaSWKe44oNE48ZiuNwsWZUfP0pc36wv9XWVQOyA==}
     engines: {node: '>= 18.0.0'}
 
   ansi-escapes@4.3.2:
@@ -5642,16 +5642,16 @@ packages:
 
 snapshots:
 
-  '@alova/adapter-uniapp@2.0.10(alova@3.2.6)':
+  '@alova/adapter-uniapp@2.0.11(alova@3.2.7)':
     dependencies:
-      '@alova/shared': 1.1.1
-      alova: 3.2.6
+      '@alova/shared': 1.1.2
+      alova: 3.2.7
 
-  '@alova/shared@1.1.1': {}
+  '@alova/shared@1.1.2': {}
 
   '@alova/wormhole@1.0.4':
     dependencies:
-      alova: 3.2.6
+      alova: 3.2.7
       commander: 12.1.0
       esbuild: 0.24.0
       glob: 11.0.0
@@ -8706,9 +8706,9 @@ snapshots:
 
   alien-signals@0.2.2: {}
 
-  alova@3.2.6:
+  alova@3.2.7:
     dependencies:
-      '@alova/shared': 1.1.1
+      '@alova/shared': 1.1.2
       rate-limiter-flexible: 5.0.4
 
   ansi-escapes@4.3.2:
