@@ -6,32 +6,59 @@
 
 ps：等我域名备案通过了，我会用 hono 部署一个用于生成 swagger 的接口服务，然后生成示例，尽量做到开箱即用。
 
-关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 "^zq-(.\*)": "@/components/zq-ui/zq-$1/zq-$1.vue"
+## 🔨 使用说明
 
-关于 vscode 插件，使用 vscode 会提示安装必要的插件，建议全部安装
+### 组件相关
 
-关于 代码片段，输入 vue3 会自动补全 template，后续考虑加入更多代码片段，因为现在是ai辅助开发的时代，过多的代码片段没有必要，难记。
+- 关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 `"^zq-(.*)": "@/components/zq-ui/zq-$1/zq-$1.vue"`
 
-关于 node 版本，尽量使用英文官网的 lts 版本，否则必须 node20+。
-关于 包管理工具，使用 pnpm，节省我可怜的磁盘空间。
+### 开发环境
 
-关于 public 文件夹，原则上来说静态图片都应该放在 static 下面，public 的存在是为了放一些需要在web服务器根目录的给某些app嵌套h5要求放一些文件。
+- 关于 vscode 插件，使用 vscode 会提示安装必要的插件，建议全部安装
+- 关于代码片段，输入 vue3 会自动补全 template，后续考虑加入更多代码片段，因为现在是ai辅助开发的时代，过多的代码片段没有必要，难记
+- 关于 node 版本，尽量使用英文官网的 lts 版本，否则必须 node20+
+- 关于包管理工具，使用 pnpm，节省磁盘空间
 
-关于 hooks，拥有自动导入，定义的 hooks 只要使用 export 导出，就可以自动导入。
+### 项目结构
 
-关于 api，alova 学习成本相对较高，你可以选择使用你喜欢的方式管理 api，这里并不限制死，可以使用其他封装，然后移除alova 相关依赖，并移除自动导入 useRequest 。如果使用 alova ，推荐使用自动 swagger.json 生成 api，然后参考 demo 内容修改生成后的 /api/index.ts 文件，然后在 main.ts 中导入 /api/index.ts 文件，推荐安装 alova 的 vscode 插件提升开发体验，alova 的 get 请求 注意缓存策略，建议全局忽略get请求缓存，然后改为手动控制。
+- 关于 public 文件夹，原则上来说静态图片都应该放在 static 下面，public 的存在是为了放一些需要在web服务器根目录的给某些app嵌套h5要求放一些文件
+- 关于 hooks，拥有自动导入，定义的 hooks 只要使用 export 导出，就可以自动导入
 
-关于 alova 不 await 或者不 .then 就不执行的情况，使用 useRequest 就行了，否则必须 await 或者 .then 。
+### API管理
 
-关于 cache 函数，来自一个 uniapp 基础框架 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/tree/master/src/utils/cache，默认缓存7天，如果不需要缓存时间，可以使用uni的缓存api，否则使用 cache 函数，cache 函数功能更强大。
+- 关于 api，alova 学习成本相对较高，你可以选择使用你喜欢的方式管理 api，这里并不限制死，可以使用其他封装，然后移除alova 相关依赖，并移除自动导入 useRequest
+- 如果使用 alova，推荐使用自动 swagger.json 生成 api，然后参考 demo 内容修改生成后的 /api/index.ts 文件，然后在 main.ts 中导入 /api/index.ts 文件
+- 推荐安装 alova 的 vscode 插件提升开发体验
+- alova 的 get 请求注意缓存策略，建议全局忽略get请求缓存，然后改为手动控制
+- 关于 alova 不 await 或者不 .then 就不执行的情况，使用 useRequest 就行了，否则必须 await 或者 .then
 
-关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代，为了简单性 commitlint 和 husky 不默认集成，stylelint 被 unocss 的 eslint 配置替代。
+### 缓存管理
 
-如果需要鉴权，页面权限在路由处理，按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue proxy上，在页面中使用 v-if。
+- 关于 cache 函数，来自 [uniapp基础框架](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/tree/master/src/utils/cache)，默认缓存7天
+- 如果不需要缓存时间，可以使用uni的缓存api，否则使用 cache 函数，cache 函数功能更强大
 
-关于文档，目前提供示例和注释在代码当中，如果要掌握框架那么阅读代码是必须的，代码并不复杂。
+### 代码规范
 
-关于 uvui，首先并不要使用uv-tabs，建议使用 z-tabs，其次为什么不添加类型，因为uvui的类型库有点问题，并不好用，所以不添加，也不绑死组件库，只要适配主题系统，那么就可以很轻松的切换到其他组件库。
+- 关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代
+- 为了简单性 commitlint 和 husky 不默认集成
+- stylelint 被 unocss 的 eslint 配置替代
+
+### 权限管理
+
+- 如果需要鉴权，页面权限在路由处理
+- 按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue proxy上，在页面中使用 v-if
+
+### 文档与组件库
+
+- 关于文档，目前提供示例和注释在代码当中，如果要掌握框架那么阅读代码是必须的，代码并不复杂
+- 关于 uvui，首先并不要使用uv-tabs，建议使用 z-tabs
+- 为什么不添加类型，因为uvui的类型库有点问题，并不好用，所以不添加，也不绑死组件库
+- 只要适配主题系统，那么就可以很轻松的切换到其他组件库
+
+### Tabbar
+
+- 关于自定义tabbar，已经是h5和小程序最高性能了
+- 如果对 tabbar 有严格要求，可以把 custom 移除，使用原生的
 
 ## ✨ 特性
 

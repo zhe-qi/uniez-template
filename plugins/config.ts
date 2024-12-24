@@ -39,6 +39,7 @@ let cdnUpload: Plugin | null = null;
 //   isCache: true,
 // })
 
+// 上传到服务器
 // cdnUpload = cdnUploadPlugin({
 //   enable: process.env.NODE_ENV === 'production',
 //   type: 'http',
