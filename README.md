@@ -71,6 +71,11 @@ pnpm build
 - 关于自定义tabbar，已经是h5和小程序最高性能了
 - 如果对 tabbar 有严格要求，可以把 custom 移除，使用原生的
 
+### 其他
+
+- 如果自动格式化 eslint 插件没生效。请安装依赖后重启 vscode
+- 如果 ts 服务出现异常，请使用 ctrl + shift + p 然后输入 ts server restart，或者重启 vscode
+
 ## ✨ 特性
 
 ### 🎨 动态主题切换

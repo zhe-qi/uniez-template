@@ -4,9 +4,6 @@ import type { GeneratorConfig } from '@alova/wormhole';
  * @see https://alova.js.org/zh-CN/tutorial/getting-started/introduce
  */
 export default {
-  // 顶层 input 原则上来说不用管
-  input: 'http://localhost:8080/swagger.json',
-  output: 'src/api',
   // api生成设置数组，每项代表一个自动生成的规则，包含生成的输入输出目录、规范文件地址等等
   generator: [
     // 服务器1
@@ -67,6 +64,10 @@ export default {
     //   },
     },
   ],
+
+  // 顶层 input 原则上来说不用管
+  input: 'http://localhost:8080/swagger.json',
+  output: 'src/api',
 
   // （可选）是否自动更新接口，默认开启，每5分钟检查一次，false时关闭
   // autoUpdate: true,
