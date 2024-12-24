@@ -18,9 +18,9 @@ function handleChange(index: number) {
   let name = '';
   switch (index) {
   case 0: name = 'Index'; break;
-  case 1: name = 'Hello'; break;
+  case 1: name = 'My'; break;
   }
-  router.replace({ name });
+  router.pushTab({ name });
 }
 </script>
 
@@ -37,7 +37,7 @@ function handleChange(index: number) {
         <view class="i-lucide-house text-gray" />
       </template>
     </uv-tabbar-item>
-    <uv-tabbar-item text="分包页面">
+    <uv-tabbar-item text="我的">
       <template #active-icon>
         <view class="i-lucide-user text-primary" />
       </template>

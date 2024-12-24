@@ -16,14 +16,29 @@ onLoad(async () => {
   // app中初始化加载逻辑执行完成
 });
 
-function toHello() {
+function toListPage() {
   router.push({
-    name: 'Hello',
+    name: 'List',
     params: {
-      title: 'Hello',
+      title: 'List',
     },
   });
 }
+
+onMounted(() => {
+  // #ifdef H5
+  // 预加载h5页面，h5可以预加载，记得删掉
+  uni.preloadPage({
+    url: '/pages-sub/list/list',
+  });
+  uni.preloadPage({
+    url: '/pages/test-page/test-page',
+  });
+  uni.preloadPage({
+    url: '/pages/theme/theme',
+  });
+  // #endif
+});
 </script>
 
 <template>
@@ -38,7 +53,7 @@ function toHello() {
     </view>
 
     <view class="mt-8 flex flex-col gap-4">
-      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="toHello">
+      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="toListPage">
         跳转分包页面
       </uv-button>
 

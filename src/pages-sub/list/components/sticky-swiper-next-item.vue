@@ -110,23 +110,30 @@ defineExpose({
     <z-paging
       ref="paging" v-model="dataList" use-page-scroll :scrollable="false" :hide-empty-view="hideEmptyView"
       :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false"
-      :style="{ width: '100%', backgroundColor: themeVars['--color-bg'] }" auto-show-system-loading
-      @query="queryList" @content-height-changed="contentHeightChanged"
+      :style="{ width: '100%', backgroundColor: themeVars['--color-bg'] }" auto-show-system-loading @query="queryList"
+      @content-height-changed="contentHeightChanged"
     >
       <!-- box-white 来自于 unocss.config.mts，可以被后面的类名覆盖，例如自带的是p-4但是我改成了 p-2 -->
-      <view v-for="(item, index) in dataList" :key="index" class="box-white mt-4 flex gap-2 p-2">
-        <image :src="item.image" mode="aspectFill" class="h-100 w-100" />
-        <view>
-          <view class="title">
-            {{ item.title }}
-          </view>
-          <view class="mt-2 text-2xs">
-            {{ item.detail }}
+      <view
+        v-for="(item, index) in dataList" :key="index"
+        class="item-center box-white mt-4 flex flex justify-between p-2"
+      >
+        <view class="flex items-center gap-4">
+          <image :src="item.image" mode="aspectFill" class="h-100 w-100" />
+          <view>
+            <view class="title">
+              {{ item.title }}
+            </view>
+            <view class="mt-2 text-2xs">
+              {{ item.detail }}
+            </view>
           </view>
         </view>
-        <button type="primary" class="my-auto h-fit text-base">
-          按钮
-        </button>
+        <view>
+          <button type="primary" class="h-fit text-base">
+            按钮
+          </button>
+        </view>
       </view>
     </z-paging>
   </view>

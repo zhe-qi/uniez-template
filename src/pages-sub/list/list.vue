@@ -84,7 +84,7 @@ function rpx2px(rpx: number) {
   <view class="h-full">
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
-        <zq-navbar :left-icon="false" :bg="appStore.themeVars['--color-bg']">
+        <zq-navbar left-icon :bg="appStore.themeVars['--color-bg']">
           {{ title }}
         </zq-navbar>
       </template>
@@ -117,7 +117,7 @@ function rpx2px(rpx: number) {
         </swiper>
       </view>
       <template #bottom>
-        <TabBar :index="1" />
+        <!-- bottom 可以放置例如tabbar -->
       </template>
     </z-paging>
   </view>

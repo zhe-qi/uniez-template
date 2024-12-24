@@ -10,12 +10,13 @@ onLaunch(async () => {
     // 初始化全局参数
     // 初始化字典
   ]);
+
   // 通知页面加载完成
   proxy?.$resolveAppLaunched();
 });
 </script>
 
-<style>
+<style lang="scss">
 button[type='primary'] {
   background-color: var(--primary);
 }
@@ -32,4 +33,10 @@ button[type='primary']:hover {
   -webkit-appearance: none;
   background: transparent;
 }
+
+/* #ifdef H5 */
+:global(.uni-tabbar) {
+  visibility: hidden;
+}
+/* #endif */
 </style>

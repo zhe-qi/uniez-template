@@ -7,18 +7,22 @@ withDefaults(defineProps<{
   leftIcon?: boolean
   placeholder?: boolean
   fixed?: boolean
+  bg?: string
 }>(), {
   title: '',
   leftIcon: true,
   placeholder: true,
   fixed: true,
+  bg: 'transparent',
 });
+
+const router = useRouter();
 
 function handleLeftClick() {
   uni.navigateBack({
     fail: () => {
-      uni.switchTab({
-        url: '/pages/index/index',
+      router.pushTab({
+        name: 'Index',
       });
     },
   });
@@ -26,10 +30,10 @@ function handleLeftClick() {
 </script>
 
 <template>
-  <uv-navbar :title="title" :fixed="fixed" :placeholder="placeholder" left-icon="" bg-color="transparent" v-bind="$attrs">
+  <uv-navbar :fixed="fixed" :placeholder="placeholder" left-icon="" :bg-color="bg" v-bind="$attrs">
     <template #left>
       <slot name="left">
-        <view v-if="leftIcon" class="i-lucide-chevron-left text-lg" @click="handleLeftClick" />
+        <view v-if="leftIcon" class="i-lucide-chevron-left text-xl" @click="handleLeftClick" />
       </slot>
     </template>
     <template #center>

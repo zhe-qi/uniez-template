@@ -11,6 +11,18 @@
       }
     },
     {
+      "name": "My",
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "meta": {
+          "ignoreAuth": true
+        }
+      }
+    },
+    {
       "name": "Test",
       "path": "pages/test-page/test-page",
       "style": {
@@ -36,10 +48,10 @@
       "root": "pages-sub",
       "pages": [
         {
-          "name": "Hello",
-          "path": "hello/hello",
+          "name": "List",
+          "path": "list/list",
           "style": {
-            "navigationBarTitleText": "欢迎",
+            "navigationBarTitleText": "演示列表",
             "navigationStyle": "custom",
             "navigationBarTextStyle": "white"
           }
@@ -47,11 +59,32 @@
       ]
     }
   ],
+  "preloadRule": {
+    "pages-sub/list/list": {
+      "network": "all",
+      "packages": ["pages-sub"]
+    }
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
   },
   "easycom": {
     "autoscan": true,
