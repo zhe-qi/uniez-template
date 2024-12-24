@@ -1,6 +1,8 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.1",
   "scripts": {
     "dev": "pnpm dev:h5",
     "build": "pnpm build:h5",

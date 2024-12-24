@@ -8,6 +8,17 @@ ps：等我域名备案通过了，我会用 hono 部署一个用于生成 swagg
 
 ## 🔨 使用说明
 
+```bash
+# 安装依赖
+pnpm install
+
+# 启动开发环境
+pnpm dev
+
+# 打包
+pnpm build
+```
+
 ### 组件相关
 
 - 关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 `"^zq-(.*)": "@/components/zq-ui/zq-$1/zq-$1.vue"`
