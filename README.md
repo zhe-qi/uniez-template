@@ -96,6 +96,7 @@ pnpm build
 
 - 支持在小程序中使用 component is 特性
 - 完美支持 UnoCSS,基于 unocss-preset-weapp 插件
+- 支持自动压缩上传服务器或者阿里云OSS或者你可以定义其他上传方式
 
 ### 📦 依赖管理
 
