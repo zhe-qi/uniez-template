@@ -55,11 +55,23 @@ watch(
   { immediate: true },
 );
 
+/** 走接口示例 */
+// const { send: sendUserList } = useRequest(data => Apis.general.get_api_users_list(data), {
+//   immediate: false,
+// });
+
 // 查询列表数据
-async function queryList(_pageNo: number, pageSize: number) {
+async function queryList(pageNo: number, pageSize: number) {
   try {
     const mockData = await generateMockData(pageSize);
     paging.value?.complete(mockData);
+
+    /** 走接口示例, 掉不通，仅展示 */
+    // const res = await sendUserList({
+    //   pageNo,
+    //   pageSize,
+    // });
+    // console.log(res);
 
     hideEmptyView.value = false;
     if (completeFunc.value) {

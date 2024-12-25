@@ -4,6 +4,9 @@ import { setupRouter } from './router';
 import { store } from './store';
 import { prototypeInterceptor, setupUtils } from './utils';
 
+/** alova main */
+import './api';
+
 import 'virtual:uno.css';
 
 export function createApp() {

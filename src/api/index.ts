@@ -1,31 +1,34 @@
 import { ContentTypeEnum, ResultEnum } from '@/enums/httpEnum';
+import { getCache } from '@/utils';
 import AdapterUniapp from '@alova/adapter-uniapp';
 import { createAlova } from 'alova';
-
-/**
- * 这个文件应该是自动生成的，demo.ts提供一个参考作用
- * 实际开发如果需要根据 swagger openapi 规范自动生成api，那么这个时候 demo.ts 文件仅供参考
- * 实际开发请根据自动生成的api 下的 index 文件 按照 demo.ts 的写法，根据你自己实际业务需求
- * 对api下的index.ts进行更改，实际使用请参考alova文档
- * 以后会考虑降低alova的接入成本，尽量做到开箱即用
- * 请参考文档，并引入 api 的入口文件 至 main.ts 文件中
- * @see https://alova.js.org/zh-CN/tutorial/getting-started/extension-integration
- */
+import { createApis, withConfigType } from './createApis';
 
 const ContentType = {
   'Content-Type': ContentTypeEnum.JSON,
   'Accept': 'application/json, text/plain, */*',
 };
 
+/**
+ * 自动生成请使用 alova.config.ts 文件 执行 npx alova gen -f 命令
+ * 需要更好的体验可以使用 alova vscode 插件
+ * 全局默认get缓存已关闭，请根据需要自行开启，或者按需开启
+ * token 默认从 getCache 中获取，请根据需要自行修改，登录完成后设置 token 可以使用 setCache 请注意缓存时间
+ * 接口返回数据结构需要按照你们自己的项目后端结构来，这里只是示例
+ * 请求示例参考 src/pages-sub/list/components/sticky-swiper-next-item.vue
+ * @see https://alova.js.org/zh-CN/tutorial/getting-started/extension-integration
+ */
+
 export const alovaInstance = createAlova({
   baseURL: import.meta.env.VITE_APP_BASEURL,
   ...AdapterUniapp(),
   timeout: 30000,
+  cacheFor: null,
   beforeRequest: (method) => {
     method.config.headers = {
-      ...method.config.headers,
+      Authorization: `Bearer ${getCache('token')}`,
       ...ContentType,
-      Authorization: `Bearer ${''}`,
+      ...method.config.headers,
     };
   },
   responded: {
@@ -43,6 +46,8 @@ export const alovaInstance = createAlova({
         data: rawData,
         errMsg,
       } = response as UniNamespace.RequestSuccessCallbackResult;
+
+      /** TODO: 根据项目后端结构来，状态码 和 错误信息 */
       if (statusCode === ResultEnum.SUCCESS) {
         if (requestType) { return response; }
 
@@ -58,6 +63,7 @@ export const alovaInstance = createAlova({
 
         throw new Error(errors);
       }
+
       /** http 请求错误 */
       throw new Error(`请求错误[${statusCode}]：${errMsg}`);
     },
@@ -71,4 +77,8 @@ export const alovaInstance = createAlova({
   },
 });
 
-export default alovaInstance;
+export const $$userConfigMap = withConfigType({});
+
+const Apis = createApis(alovaInstance, $$userConfigMap);
+
+export default Apis;

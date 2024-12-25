@@ -20,7 +20,26 @@ interface ComponentResolverOptions {
    *   },
    * }
    */
-  components: Record<string, Record<string, string>>
+  components: {
+    /**
+     * 组件分组的名称
+     * @example 'form' | 'button' | 'layout'
+     * @description 用于对组件进行分类管理
+     */
+    [key: string]: {
+      /**
+       * 组件的具体配置
+       * @property {string} key - 组件的名称,如 'input' | 'radio' | 'primary'
+       * @property {string} value - 组件的文件路径,支持相对路径和别名路径
+       * @example
+       * {
+       *   input: '@/components/form/input.vue',
+       *   radio: './components/form/radio.vue'
+       * }
+       */
+      [key: string]: string
+    }
+  }
   /**
    * 平台配置
    * @default ['app', /^mp(-.*)?$/]

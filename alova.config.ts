@@ -9,7 +9,8 @@ export default {
     // 服务器1
     {
       // input参数1：openapi的json文件url地址
-      input: 'http://localhost:8080/swagger.json',
+      // input: 'http://localhost:8080/swagger.json',
+      input: 'http://182.254.220.168:5173/api/doc',
 
       // input参数2：以当前项目为相对目录的本地地址
       // input: 'openapi/api.json'
