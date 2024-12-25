@@ -15,6 +15,7 @@ uniez-template，一个“功能”和“开发体验”优先的 uniapp 的 h5�
 - 📜 z-paging - 支持虚拟列表的上拉加载下拉刷新组件
 - 📦 pinia - Vue 的状态管理库，支持 TypeScript，提供更好的开发体验
 - 🔷 typescript - JavaScript 的超集，提供类型系统和下一代 ECMAScript 特性
+- 🔧 antfu eslint config - 提供更好的代码风格和代码质量
 
 ## 🔨 使用说明
 
