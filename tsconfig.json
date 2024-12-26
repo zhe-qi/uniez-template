@@ -1,15 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "types": [
       "@dcloudio/types",
@@ -20,9 +15,7 @@
     "sourceMap": true
   },
   "vueCompilerOptions": {
-    "plugins": [
-      "@uni-helper/uni-app-types/volar-plugin"
-    ]
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   },
   "include": [
     "src/**/*.ts",

@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import type { SwiperOnAnimationfinishEvent, SwiperOnTransitionEvent } from '@uni-helper/uni-app-types';
-import TabBar from '@/components/tab-bar/tab-bar.vue';
 import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
 
 const appStore = useAppStore();
