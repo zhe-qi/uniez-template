@@ -4,10 +4,6 @@
   "private": true,
   "packageManager": "pnpm@9.15.1",
   "license": "MIT",
-  "engines": {
-    "node": ">=20",
-    "pnpm": ">=9.15"
-  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm dev:h5",
