@@ -1,163 +1,169 @@
 # uniapp-template
 
-uniez-template，一个“功能”和“开发体验”优先的 uniapp 的模板
+一个注重"功能"和"开发体验"的 uniapp 模板。
 
-模板并不难，因为模板是开发体验优先的，里面很多好用的规范和功能，但是要使用这些功能需要一定的门槛，比如查询文档学习能力，阅读框架代码能力，由于功能还算强大好像并不能做到开箱即用，且有一点点的上手门槛。
+## 🛠️ 技术栈
 
-## 🛠️ 技术栈使用
+- ⚡️ [vite6](https://vitejs.dev/) - 构建工具
+- 🖖 [vue3](https://vuejs.org/) - 渐进式框架
+- 🎨 [unocss](https://unocss.dev/) - 原子化 CSS 引擎
+- 🚦 [uni-mini-router](https://github.com/uni-helper/uni-mini-router) - 小程序路由管理器
+- 🚀 [alova](https://alova.js.org/) - 轻量级请求策略库
+- 🎯 [uv-ui](https://www.uvui.cn/) - Vue3 UI 框架
+- 📜 [z-paging](https://z-paging.zxlee.cn/) - 上拉加载下拉刷新组件
+- 📦 [pinia](https://pinia.vuejs.org/) - 状态管理
+- 🔷 [typescript](https://www.typescriptlang.org/) - JavaScript 超集
+- 🔧 [antfu eslint config](https://github.com/antfu/eslint-config) - 代码规范
 
-- ⚡️ vite6 - 下一代前端构建工具，更快的构建速度和更好的开发体验
-- 🖖 vue3 - 渐进式 JavaScript 框架，更好的性能和组合式 API
-- 🎨 unocss - 即时原子化 CSS 引擎，按需生成样式，零运行时开销
-- 🚦 uni-mini-router - 小程序路由管理器，支持路由拦截、路由守卫等功能
-- 🚀 alova - 轻量级请求策略库，支持请求共享、缓存、重试等功能
-- 🎯 uv-ui - 基于 uView2.0 的 Vue3 版本 UI 框架，提供丰富的组件
-- 📜 z-paging - 支持虚拟列表的上拉加载下拉刷新组件
-- 📦 pinia - Vue 的状态管理库，支持 TypeScript，提供更好的开发体验
-- 🔷 typescript - JavaScript 的超集，提供类型系统和下一代 ECMAScript 特性
-- 🔧 antfu eslint config - 提供更好的代码风格和代码质量
-
-## 🔨 使用说明
+## 🔨 快速开始
 
 ```bash
 # 安装依赖
 pnpm install
 
-# 启动开发环境
-pnpm dev
+# 开发
+pnpm dev            # H5
+pnpm dev:mp-weixin     # 微信小程序
 
 # 打包
 pnpm build
 ```
 
-### 组件相关
+## ✨ 特性
 
-- 关于 components 下的 zq-ui 文件夹，作用是通过 uniapp 自动导入组件，把一些常用的小组件封装起来方便使用和维护，你也可以改成其他名字，但是要修改 pages.json 下的 `"^zq-(.*)": "@/components/zq-ui/zq-$1/zq-$1.vue"`
+### 🎨 主题系统
+
+- 运行时动态切换主题
+- 基于 CSS 变量实现
+- 支持小程序和 H5
+
+### ⚡️ 请求管理
+
+- 基于 alova 的请求策略
+- OpenAPI 自动生成
+- 全局加载状态管理
+- 请求缓存与共享、Token 自动注入
+- 推荐安装 alova 的 vscode 插件提升开发体验
+- 关于 alova 不 await 或者不 .then 就不执行的情况，使用 useRequest 就行了，否则必须 await 或者 .then
+
+### 🚀 开发体验
+
+- API 自动引入(Vue/Pinia/Alova)
+- ESLint + UnoCSS 代码规范
+- TypeScript 类型支持
+- Vue3 代码片段
+- store、hook、Vue 和 uniapp API 自动引入
+- 支持 $ 开头的功能直接使用，并拥有完整的类型提示
+- 支持自动压缩上传服务器或者阿里云OSS或者你可以定义其他上传方式
+- 全局等待加载，优雅处理全局异步状态管理、不阻塞ui渲染，可选并行或等待
+
+### 📱 路由增强
+
+- 基于 name 的路由跳转
+- 路由守卫拦截
+- 权限控制、页面预加载
+- 按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue实例上，在页面中使用 v-if 判断
+
+### 📦 分包优化
+
+- 异步跨包调用
+- 组件异步加载
+- 分包预加载
+- 支持小程序和 H5 来自 [uni-ku/bundle-optimizer](https://github.com/uni-ku/bundle-optimizer)
+
+## 📖 开发指南
 
 ### 开发环境
 
-- 关于 vscode 插件，使用 vscode 会提示安装必要的插件，建议全部安装
-- 关于代码片段，输入 vue3 会自动补全 template，后续考虑加入更多代码片段，因为现在是ai辅助开发的时代，过多的代码片段没有必要，难记
-- 关于 node 版本，尽量使用英文官网的 lts 版本，否则必须 node20+
-- 关于包管理工具，使用 pnpm，节省磁盘空间
+- Node.js: 20+(现在很多项目都要求node20以上)
+- 包管理器: pnpm(节省磁盘空间)
+- IDE: VSCode(会自动推荐插件安装)
 
-### 项目结构
+### 文档说明
+
+- 代码中包含详细的示例和注释，建议通过阅读源码来掌握框架用法
+- 代码结构清晰简单，容易理解和上手
+
+### 组件说明
+
+- 自动导入 `zq-ui` 下的组件(可以更换名字)
+- 支持 `component is` 动态组件
+- 内置 `z-paging` 列表组件
+- 优化的自定义 TabBar
+
+### 工具函数
+
+- 缓存管理(默认7天)
+- 全局模板变量(支持ts类型定义)
+- 加密解密，md5，base64，aes
+
+### 组件库说明
+
+- 默认使用 uvui 组件库，但不强制绑定
+- 建议使用 z-tabs 替代 uv-tabs，对 zpaging 支持更友好
+- 未添加 uvui 类型定义，因其类型库存在问题
+- 得益于主题系统的设计，可以方便地切换到其他组件库
+- 图标库使用 i-lucide-\*，或者 uv-icon，前者按需导入，后者则全部被导入了
+
+### 注意事项
 
 - 关于 public 文件夹，原则上来说静态图片都应该放在 static 下面，public 的存在是为了放一些需要在web服务器根目录的给某些app嵌套h5要求放一些文件
 - 关于 hooks，拥有自动导入，定义的 hooks 只要使用 export 导出，就可以自动导入
-
-### API管理
-
-- 关于 api，alova 学习成本相对较高，你可以选择使用你喜欢的方式管理 api，这里并不限制死，可以使用其他封装，然后移除alova 相关依赖，并移除自动导入 useRequest
-- 如果使用 alova，推荐使用自动 swagger.json 生成 api，然后参考 demo 内容修改生成后的 /api/index.ts 文件，然后在 main.ts 中导入 /api/index.ts 文件
-- 推荐安装 alova 的 vscode 插件提升开发体验
-- alova 的 get 请求注意缓存策略，建议全局忽略get请求缓存，然后改为手动控制
-- 关于 alova 不 await 或者不 .then 就不执行的情况，使用 useRequest 就行了，否则必须 await 或者 .then
-
-### 缓存管理
-
-- 关于 cache 函数，来自 [uniapp基础框架](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/tree/master/src/utils/cache)，默认缓存7天
-- 如果不需要缓存时间，可以使用uni的缓存api，否则使用 cache 函数，cache 函数功能更强大
-
-### 代码规范
-
-- 关于 prettier，commitlint，husky，stylelint：prettier 目前被 antfu config + eslint format 替代
-- 为了简单性 commitlint 和 husky 不默认集成
-- stylelint 被 unocss 的 eslint 配置替代
-
-### 权限管理
-
-- 如果需要鉴权，页面权限在路由处理
-- 按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue proxy上，在页面中使用 v-if
-
-### 文档与组件库
-
-- 关于文档，目前提供示例和注释在代码当中，如果要掌握框架那么阅读代码是必须的，代码并不复杂
-- 关于 uvui，首先并不要使用uv-tabs，建议使用 z-tabs
-- 为什么不添加类型，因为uvui的类型库有点问题，并不好用，所以不添加，也不绑死组件库
-- 只要适配主题系统，那么就可以很轻松的切换到其他组件库
-
-### Tabbar
-
-- 关于自定义tabbar，已经是h5和小程序最高性能了
-- 如果对 tabbar 有严格要求，可以把 custom 移除，使用原生的
-
-### 其他
-
+- 组件库使用 uv-ui(开发体验最好用的组件库)
+- 环境变量配置在 .env 和 .env.\* 文件
+- 分包配置在 vite.config.ts，分包优化在 pages.config.ts
 - 如果自动格式化 eslint 插件没生效。请安装依赖后重启 vscode
 - 如果 ts 服务出现异常，请使用 ctrl + shift + p 然后输入 ts server restart，或者重启 vscode
+- 如果对 tabbar 有严格要求，可以把 custom 移除，使用原生的
+- 关于 pinia 持久化，推荐使用 watch 手动控制，然后在初始化时获取
 
-## ✨ 特性
+### 项目结构
 
-### 🎨 动态主题切换
-
-- 支持运行时动态切换主题
-- 主题配置灵活,可自定义
-- 仅支持小程序 和 h5
-
-### ⚡️ 全局等待加载
-
-- 优雅处理全局异步状态管理
-- 不阻塞ui渲染，可选并行或等待
-
-### 🔥 API 自动生成
-
-- 基于 alova 第三方库
-- 支持通过 OpenAPI 规范自动生成 API 调用代码
-- 类型安全,开发体验好
-
-### 🎉 小程序增强
-
-- 支持在小程序中使用 component is 特性
-- 完美支持 UnoCSS,基于 unocss-preset-weapp 插件
-- 支持自动压缩上传服务器或者阿里云OSS或者你可以定义其他上传方式
-
-### 📦 依赖管理
-
-- 依赖包持续更新
-- 始终保持最新最稳定版本
-- 作为启动模板永不过时
-
-### 🚀 自动引入
-
-- store、hook、Vue 和 uniapp API 自动引入
-- 支持 $ 开头的功能直接使用，并拥有完整的类型提示
-
-### 🔧 开发体验
-
-- 使用 antfu eslint config
-- 内置 UnoCSS eslint 配置
-- 代码自动保存格式化
-- 推荐 VSCode 插件配置
-
-### 📱 路由管理
-
-- 使用 uni-mini-router
-- 基于 name 的路由跳转
-- 文件位置修改无需批量替换路径
-
-### 🎈 UI 框架
-
-- 使用 uv-ui 组件库
-- 仅使用组件,不使用工具 API
-- 保持轻量和灵活性
-
-### 分包策略
-
-- 分包优化
-- 模块异步跨包调用
-- 组件异步跨包引用
-- 仅支持小程序 和 h5
-
-## 🚧 开发计划
-
-- [ ] 完善请求相关功能
-- [ ] 增强其他核心特性
-- [ ] 提供更多实用功能
+```bash
+├── .vscode # VSCode 配置
+│ ├── extensions.json # 推荐插件
+│ └── vue3.code-snippets # Vue3 代码片段
+├── env # 环境变量配置
+├── plugins # Vite 插件
+├── public # 公共资源
+├── src
+│ ├── api # API 接口
+│ ├── components # 组件
+│ │ ├── tab-bar # 自定义 TabBar
+│ │ └── zq-ui # 自动注册组件
+│ ├── hooks # 钩子函数(自动导入)
+│ ├── layouts # 布局组件
+│ ├── pages # 主包页面
+│ │ ├── index # 首页
+│ │ ├── my # 我的
+│ │ ├── test-page # 测试页面
+│ │ └── theme # 主题设置
+│ ├── pages-sub # 分包页面
+│ │ └── list # 列表页面
+│ ├── router # 路由配置
+│ ├── store # 状态管理
+│ │ └── modules # Store 模块
+│ ├── types # 类型定义
+│ ├── utils # 工具函数
+│ ├── App.vue # 根组件
+│ ├── main.ts # 入口文件
+│ ├── manifest.json # 应用配置
+│ ├── pages.json # 页面配置
+│ └── uni.scss # uvui主题样式
+├── static # 静态资源
+├── .eslintrc.json # ESLint 配置
+├── .gitignore # Git 忽略文件
+├── manifest.config.ts # 清单配置
+├── package.json # 项目配置
+├── pages.config.ts # 页面配置
+├── tsconfig.json # TypeScript 配置
+├── uno.config.ts # UnoCSS 配置
+└── vite.config.ts # Vite 配置
+```
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 PR 参与项目建设！
+欢迎提交 [Issue](https://github.com/zhe-qi/uniapp-template/issues) 和 PR！
 
 ## 📄 开源协议
 
