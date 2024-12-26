@@ -50,8 +50,7 @@ pnpm build
 
 - API 自动引入(Vue/Pinia/Alova)
 - ESLint + UnoCSS 代码规范
-- TypeScript 类型支持
-- Vue3 代码片段
+- TypeScript 类型支持、Vue3 代码片段
 - store、hook、Vue 和 uniapp API 自动引入
 - 支持 $ 开头的功能直接使用，并拥有完整的类型提示
 - 支持自动压缩上传服务器或者阿里云OSS或者你可以定义其他上传方式
@@ -60,8 +59,7 @@ pnpm build
 ### 📱 路由增强
 
 - 基于 name 的路由跳转
-- 路由守卫拦截
-- 权限控制、页面预加载
+- 路由守卫拦截、权限控制、页面预加载
 - 按钮权限自定义 hasPermission 函数，然后添加自动导入，或者挂载到vue实例上，在页面中使用 v-if 判断
 
 ### 📦 分包优化
@@ -160,6 +158,8 @@ pnpm build
 ├── uno.config.ts # UnoCSS 配置
 └── vite.config.ts # Vite 配置
 ```
+
+我理想中的 uniapp组件库 应该是 radix、shadcn/ui、origin ui 那样的组件库，希望有人能实现一个🙏。
 
 ## 🤝 贡献
 
