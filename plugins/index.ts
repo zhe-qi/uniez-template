@@ -1,6 +1,13 @@
 import uni from '@dcloudio/vite-plugin-uni';
 import uniLayouts from '@uni-helper/vite-plugin-uni-layouts';
+/**
+ * 分包优化、模块异步跨包调用、组件异步跨包引用
+ * @see https://github.com/uni-ku/bundle-optimizer
+ */
+import Optimization from '@uni-ku/bundle-optimizer';
+
 import AutoImport from 'unplugin-auto-import/vite';
+
 import { plugins } from './config';
 
 export async function getPlugins() {
@@ -24,6 +31,21 @@ export async function getPlugins() {
       dts: 'src/types/auto-import.d.ts',
       dirs: ['src/hooks', 'src/store/modules'],
       vueTemplate: true,
+    }),
+    Optimization({
+      enable: {
+        'optimization': true,
+        'async-import': true,
+        'async-component': true,
+      },
+      dts: {
+        'async-import': {
+          path: 'src/types/async-import.d.ts',
+        },
+        'async-component': {
+          path: 'src/types/async-component.d.ts',
+        },
+      },
     }),
     ...plugins,
   ];
