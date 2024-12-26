@@ -179,7 +179,6 @@ declare module 'vue' {
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useId: UnwrapRef<typeof import('vue')['useId']>
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
-    readonly useQuery: UnwrapRef<typeof import('../hooks/useQuery')['useQuery']>
     readonly useRequest: UnwrapRef<typeof import('alova/client')['useRequest']>
     readonly useRoute: UnwrapRef<typeof import('uni-mini-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('uni-mini-router')['useRouter']>
