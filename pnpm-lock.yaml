@@ -138,6 +138,12 @@ importers:
       '@uni-helper/vite-plugin-uni-layouts':
         specifier: ^0.1.10
         version: 0.1.10(rollup@4.28.0)
+      '@uni-helper/vite-plugin-uni-manifest':
+        specifier: ^0.2.7
+        version: 0.2.7(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@uni-helper/vite-plugin-uni-pages':
+        specifier: ^0.2.28
+        version: 0.2.28(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))
       '@uni-ku/bundle-optimizer':
         specifier: 1.1.1
         version: 1.1.1(@vueuse/core@12.2.0(typescript@5.7.2))(postcss@8.4.49)(rollup@4.28.0)(typescript@5.7.2)(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
@@ -2485,6 +2491,16 @@ packages:
   '@uni-helper/vite-plugin-uni-layouts@0.1.10':
     resolution: {integrity: sha512-RJdGmJjZtpKNVfShiKYZrualMxdi+i8uh7zpPG+X3lzf6wyKSJgWwVAj3GUdqeE/QUEncNPmj2sqwuyeLXPxbA==}
 
+  '@uni-helper/vite-plugin-uni-manifest@0.2.7':
+    resolution: {integrity: sha512-hZvvqCpi7EMDCjk1cIGmKoOiIBos4B8UODmEnPtFWMUNuo5ZaDMpm60f2xuVUFca0HslBDRNMjpaLgIyBdvbhQ==}
+    peerDependencies:
+      vite: ^4.0.0 || ^5.0.0
+
+  '@uni-helper/vite-plugin-uni-pages@0.2.28':
+    resolution: {integrity: sha512-WSunH3tWjuw9tVAVOqo/RmkKPsaF97MY5I9FXuTuovs4j5oNgPiot9Ysb6T5RJN2KU2zlBlQi1dO/ZMj9b4BYA==}
+    peerDependencies:
+      vite: ^5.0.0
+
   '@uni-ku/bundle-optimizer@1.1.1':
     resolution: {integrity: sha512-IZJ+jqssPLqlsVZkgKmX9GsaOYwJyaZaEYkQrWLVD8aqWEeY86IMf7O9y3ko0WcXK66Cyu5mzCeEjZxBzxGrwQ==}
     peerDependencies:
@@ -3298,6 +3314,10 @@ packages:
   destroy@1.2.0:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
+
+  detect-indent@6.1.0:
+    resolution: {integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==}
+    engines: {node: '>=8'}
 
   detect-libc@2.0.3:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
@@ -4413,6 +4433,9 @@ packages:
 
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+
+  lodash.groupby@4.6.0:
+    resolution: {integrity: sha512-5dcWxm23+VAoz+awKmBaiBvzox8+RqMgFhi7UvX9DHZr2HdxHXM/Wrf8cfKpsW37RNrvtPn6hSwNqurSILbmJw==}
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -9009,6 +9032,31 @@ snapshots:
       - magicast
       - rollup
 
+  '@uni-helper/vite-plugin-uni-manifest@0.2.7(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))':
+    dependencies:
+      c12: 1.11.2
+      vite: 6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1)
+    transitivePeerDependencies:
+      - magicast
+
+  '@uni-helper/vite-plugin-uni-pages@0.2.28(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))':
+    dependencies:
+      '@uni-helper/uni-env': 0.1.7
+      '@vue/compiler-sfc': 3.5.13
+      chokidar: 3.6.0
+      debug: 4.4.0
+      detect-indent: 6.1.0
+      detect-newline: 3.1.0
+      fast-glob: 3.3.2
+      json5: 2.2.3
+      lodash.groupby: 4.6.0
+      magic-string: 0.30.17
+      unconfig: 0.5.5
+      vite: 6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1)
+      yaml: 2.6.1
+    transitivePeerDependencies:
+      - supports-color
+
   '@uni-ku/bundle-optimizer@1.1.1(@vueuse/core@12.2.0(typescript@5.7.2))(postcss@8.4.49)(rollup@4.28.0)(typescript@5.7.2)(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(sass@1.77.8)(terser@5.36.0)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-4020820240925001(@vueuse/core@12.2.0(typescript@5.7.2))(postcss@8.4.49)(rollup@4.28.0)(vue@3.5.13(typescript@5.7.2))
@@ -9952,6 +10000,8 @@ snapshots:
   destr@2.0.3: {}
 
   destroy@1.2.0: {}
+
+  detect-indent@6.1.0: {}
 
   detect-libc@2.0.3: {}
 
@@ -11491,6 +11541,8 @@ snapshots:
   lodash.camelcase@4.3.0: {}
 
   lodash.debounce@4.0.8: {}
+
+  lodash.groupby@4.6.0: {}
 
   lodash.merge@4.6.2: {}
 

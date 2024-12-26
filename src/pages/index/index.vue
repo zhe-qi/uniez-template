@@ -1,12 +1,22 @@
+<route lang="json5" type="home">
+{
+  "name": "Index",
+  "style": {
+    "navigationBarTitleText": "首页"
+  },
+  "meta": {
+    "ignoreAuth": true
+  }
+}
+</route>
+
 <script setup lang="ts">
 import TabBar from '@/components/tab-bar/tab-bar.vue';
-
-const { VITE_APP_TITLE } = import.meta.env;
 
 const router = useRouter();
 const appStore = useAppStore();
 
-const title = ref(VITE_APP_TITLE);
+const title = ref('一个“功能”和“开发体验”优先的 uniapp 的模板');
 
 const proxy = getCurrentInstance()?.proxy;
 // 如果需要等待全局逻辑执行完毕后，则必须等待 proxy?.$appLaunchedPromise，其他生命周期也是如此
@@ -57,7 +67,7 @@ onMounted(() => {
         跳转分包页面
       </uv-button>
 
-      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="router.push({ name: 'Test' })">
+      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="router.push({ name: 'TestPage' })">
         跳转测试 component is 页面
       </uv-button>
 

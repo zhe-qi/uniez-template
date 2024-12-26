@@ -1,3 +1,16 @@
+<route lang="json5">
+{
+  "name": "My",
+  "style": {
+    "navigationBarTitleText": "我的",
+    "navigationStyle": "custom"
+  },
+  "meta": {
+    "ignoreAuth": true
+  }
+}
+</route>
+
 <script lang="ts" setup>
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 

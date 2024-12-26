@@ -1,5 +1,8 @@
 import uni from '@dcloudio/vite-plugin-uni';
 import uniLayouts from '@uni-helper/vite-plugin-uni-layouts';
+import uniManifest from '@uni-helper/vite-plugin-uni-manifest';
+import uniPages from '@uni-helper/vite-plugin-uni-pages';
+
 /**
  * 分包优化、模块异步跨包调用、组件异步跨包引用
  * @see https://github.com/uni-ku/bundle-optimizer
@@ -15,6 +18,13 @@ export async function getPlugins() {
 
   return [
     uniLayouts(),
+    uniManifest(),
+    uniPages({
+      exclude: ['**/components/**/**.*'],
+      routeBlockLang: 'json5',
+      dts: 'src/types/uni-pages.d.ts',
+      subPackages: ['src/pages-sub'],
+    }),
     uni(),
     unocss(),
     AutoImport({

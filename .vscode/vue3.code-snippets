@@ -3,15 +3,24 @@
     "scope": "vue",
     "prefix": "vue3",
     "body": [
+      "<route lang=\"json5\">",
+      "{",
+      "  \"name\": \"$1\",",
+      "  \"style\": {",
+      "    \"navigationBarTitleText\": \"$2\"",
+      "  }",
+      "},",
+      "</route>\n",
       "<script lang=\"ts\" setup>",
       "//$3",
       "</script>\n",
       "<template>",
-      "  <view class=\"\">$2</view>",
+      "  <view class=\"\">$4</view>",
       "</template>\n",
       "<style lang=\"scss\" scoped>",
-      "//$4",
-      "</style>\n",
+      "//$5",
+      "</style>\n"
     ],
+    "description": "生成 Vue3 + uni-app + route块 模板"
   }
 }

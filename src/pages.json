@@ -1,68 +1,57 @@
 {
   "pages": [
     {
-      "name": "Index",
       "path": "pages/index/index",
+      "type": "home",
+      "name": "Index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "首页"
       },
       "meta": {
         "ignoreAuth": true
       }
     },
     {
-      "name": "My",
       "path": "pages/my/my",
+      "type": "page",
+      "name": "My",
       "style": {
         "navigationBarTitleText": "我的",
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "white"
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
       }
     },
     {
-      "name": "Test",
       "path": "pages/test-page/test-page",
+      "type": "page",
+      "name": "TestPage",
       "style": {
-        "navigationBarTitleText": "测试"
+        "navigationBarTitleText": "测试页面"
       },
       "meta": {
         "ignoreAuth": true
       }
     },
     {
-      "name": "Theme",
       "path": "pages/theme/theme",
+      "type": "page",
+      "name": "Theme",
       "style": {
-        "navigationBarTitleText": "主题"
+        "navigationBarTitleText": "动态主题"
       },
       "meta": {
         "ignoreAuth": true
       }
-    }
-  ],
-  "subPackages": [
-    {
-      "root": "pages-sub",
-      "pages": [
-        {
-          "name": "List",
-          "path": "list/list",
-          "style": {
-            "navigationBarTitleText": "演示列表",
-            "navigationStyle": "custom",
-            "navigationBarTextStyle": "white"
-          }
-        }
-      ]
     }
   ],
   "preloadRule": {
     "pages-sub/list/list": {
       "network": "all",
-      "packages": ["pages-sub"]
+      "packages": [
+        "pages-sub"
+      ]
     }
   },
   "globalStyle": {
@@ -90,10 +79,28 @@
     "autoscan": true,
     "custom": {
       "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue",
-      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)":
-        "z-paging/components/z-paging$1/z-paging$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue",
       "^z-tabs": "@zxlee/z-tabs/components/z-tabs/z-tabs.vue",
       "^zq-(.*)": "@/components/zq-ui/zq-$1/zq-$1.vue"
     }
-  }
+  },
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "list/list",
+          "type": "page",
+          "name": "List",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    }
+  ]
 }

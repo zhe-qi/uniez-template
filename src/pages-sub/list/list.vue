@@ -1,3 +1,16 @@
+<route lang="json5">
+{
+  "name": "List",
+  "style": {
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+  },
+  "meta": {
+    "ignoreAuth": true
+  }
+}
+</route>
+
 <script lang="ts" setup>
 import type { SwiperOnAnimationfinishEvent, SwiperOnTransitionEvent } from '@uni-helper/uni-app-types';
 import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
@@ -11,7 +24,6 @@ onLoad((options) => {
   if (options?.title) {
     title.value = options?.title;
   }
-  console.log(route.params?.title === options?.title);
 });
 
 const swiperHeight = ref(0);

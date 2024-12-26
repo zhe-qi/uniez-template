@@ -1,3 +1,15 @@
+<route lang="json5">
+{
+  "name": "Theme",
+  "style": {
+    "navigationBarTitleText": "动态主题"
+  },
+  "meta": {
+    "ignoreAuth": true
+  }
+}
+</route>
+
 <script lang="ts" setup>
 const appStore = useAppStore();
 

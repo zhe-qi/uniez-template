@@ -1,3 +1,15 @@
+<route lang="json5">
+{
+  "name": "TestPage",
+  "style": {
+    "navigationBarTitleText": "测试页面"
+  },
+  "meta": {
+    "ignoreAuth": true
+  }
+}
+</route>
+
 <script lang="ts" setup>
 const components = [
   'desc',
