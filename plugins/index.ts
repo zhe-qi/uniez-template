@@ -56,6 +56,7 @@ export async function getPlugins() {
           path: 'src/types/async-component.d.ts',
         },
       },
+      logger: false,
     }),
     ...plugins,
   ];
