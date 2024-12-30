@@ -21,8 +21,11 @@ export default defineConfig({
   shortcuts: [
     {
       'flex-center': 'flex justify-center items-center',
+      /** 基础盒子样式，可修改可覆盖 */
       'box-white': 'mx-4 p-4 rounded-md bg-white shadow',
+      /** 基础边框样式，如果要加边框必须要加这个，否则边框无效 */
       'border-base': 'border border-solid',
+      /** 用于调试，框出元素 */
       'border-test': 'border-t border-solid border-red-500',
     },
   ],
@@ -40,6 +43,7 @@ export default defineConfig({
   theme: {
     colors: {
       primary: 'var(--wot-color-theme,#0957DE)',
+      /** 可以继续添加颜色变量 */
     },
     fontSize: {
       'mini': ['18rpx', '26rpx'],

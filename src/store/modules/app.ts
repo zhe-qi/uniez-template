@@ -1,4 +1,5 @@
 import type { ConfigProviderThemeVars } from 'wot-design-uni';
+import { ThemeModeEnum } from '@/enums/appEnum';
 import { defineStore } from 'pinia';
 
 export const useAppStore = defineStore('AppStore', () => {
@@ -7,7 +8,7 @@ export const useAppStore = defineStore('AppStore', () => {
     colorTheme: '#0957DE',
   });
 
-  const theme = ref<'light' | 'dark'>('light');
+  const theme = ref<ThemeModeEnum>(ThemeModeEnum.LIGHT);
 
   /**
    * 关于持久化，可以导入 getCache 和 setCache 函数,可以设置过期时间可以设置默认值

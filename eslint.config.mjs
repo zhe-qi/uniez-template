@@ -33,5 +33,7 @@ export default antfu({
     './dist/*',
     '**/static/*',
     '**/uni_modules/*',
+    'src/manifest.json',
+    'src/pages.json',
   ],
 });

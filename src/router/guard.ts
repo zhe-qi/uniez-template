@@ -8,7 +8,6 @@ export function createRouterGuard(router: Router) {
 function createBeforeEachGuard(router: Router) {
   router.beforeEach((to, _, next) => {
     // 如果忽略了需要登录
-    console.log(to);
     if (to.meta?.ignoreAuth) {
       next();
       return;

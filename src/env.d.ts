@@ -13,6 +13,7 @@ interface ImportMetaEnv {
   VITE_APP_BASEURL: string
   /** 应用标题 */
   VITE_APP_TITLE: string
+  /** 继续添加您需要的环境变量类型提示 */
 }
 
 interface ImportMeta {
