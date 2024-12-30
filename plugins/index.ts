@@ -11,7 +11,7 @@ import Optimization from '@uni-ku/bundle-optimizer';
 
 import AutoImport from 'unplugin-auto-import/vite';
 
-import { plugins } from './config';
+import { plugins, subPackages } from './config';
 
 export async function getPlugins() {
   const unocss = await import('unocss/vite').then(i => i.default);
@@ -23,7 +23,7 @@ export async function getPlugins() {
       exclude: ['**/components/**/**.*'],
       routeBlockLang: 'json5',
       dts: 'src/types/uni-pages.d.ts',
-      subPackages: ['src/pages-sub'],
+      subPackages,
     }),
     uni(),
     unocss(),

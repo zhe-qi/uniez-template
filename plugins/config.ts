@@ -3,6 +3,13 @@ import vitePluginDynamicComponent from './vite-plugin-dynamic-component';
 // import OSS from 'ali-oss';
 // import cdnUploadPlugin from './vite-plugin-cdn-upload';
 
+/**
+ * 所有关于 vite 插件的配置都在这里
+ */
+
+// 分包的路径，用于自动生成，例如你想把一个文件夹拆分成一个分包，只要加入这里就行了，页面里使用route块就行了
+export const subPackages = ['src/pages-sub'];
+
 const dynamicComponent = vitePluginDynamicComponent({
   components: {
     test: {
