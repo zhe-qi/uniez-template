@@ -11,9 +11,9 @@ const appStore = useAppStore();
 </script>
 
 <template>
-  <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="emit('clickCustomEvent', props.desc)">
+  <wd-button type="primary" @click="emit('clickCustomEvent', props.desc)">
     点击我测试外部自定义事件
-  </uv-button>
+  </wd-button>
 </template>
 
 <style lang="scss" scoped>

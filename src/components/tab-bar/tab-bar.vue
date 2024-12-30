@@ -5,47 +5,40 @@ const props = withDefaults(
     placeholder?: boolean
   }>(),
   {
-    index: 1,
+    index: 0,
     placeholder: true,
   },
 );
 
-const appStore = useAppStore();
 const router = useRouter();
 
-function handleChange(index: number) {
-  if (index === props.index) { return; }
+function handleChange({ value }: { value: number }) {
+  if (value === props.index) { return; }
   let name = '';
-  switch (index) {
-  case 0: name = 'Index'; break;
-  case 1: name = 'My'; break;
+  switch (value) {
+      case 0: name = 'Index'; break;
+      case 1: name = 'My'; break;
   }
   router.pushTab({ name });
 }
 </script>
 
 <template>
-  <uv-tabbar
-    :active-color="appStore.themeVars['--primary']" inactive-color="#9ca3af" :value="index"
-    :placeholder="placeholder" @change="handleChange"
+  <wd-tabbar
+    :model-value="index" inactive-color="#9ca3af" :placeholder="placeholder" safe-area-inset-bottom fixed
+    @change="handleChange"
   >
-    <uv-tabbar-item text="首页">
-      <template #active-icon>
-        <view class="i-lucide-house text-primary" />
+    <wd-tabbar-item title="首页">
+      <template #icon>
+        <view :class="[index === 0 ? 'i-lucide-house text-primary' : 'i-lucide-house text-gray']" />
       </template>
-      <template #inactive-icon>
-        <view class="i-lucide-house text-gray" />
+    </wd-tabbar-item>
+    <wd-tabbar-item title="我的">
+      <template #icon>
+        <view :class="[index === 1 ? 'i-lucide-user text-primary' : 'i-lucide-user text-gray']" />
       </template>
-    </uv-tabbar-item>
-    <uv-tabbar-item text="我的">
-      <template #active-icon>
-        <view class="i-lucide-user text-primary" />
-      </template>
-      <template #inactive-icon>
-        <view class="i-lucide-user text-gray" />
-      </template>
-    </uv-tabbar-item>
-  </uv-tabbar>
+    </wd-tabbar-item>
+  </wd-tabbar>
 </template>
 
 <style lang="scss" scoped>

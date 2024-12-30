@@ -14,7 +14,7 @@
 const appStore = useAppStore();
 
 function handleClickTheme(color: string) {
-  appStore.themeVars['--primary'] = color;
+  appStore.themeVars.colorTheme = color;
 }
 </script>
 
@@ -27,16 +27,16 @@ function handleClickTheme(color: string) {
     <view class="title">
       我是绿色主题
     </view>
-    <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="handleClickTheme('green')">
+    <wd-button type="primary" @click="handleClickTheme('green')">
       点击我测试动态主题
-    </uv-button>
+    </wd-button>
 
-    <view class="text-red-500">
+    <view class="title">
       我是红色主题
     </view>
-    <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="handleClickTheme('red')">
+    <wd-button type="primary" @click="handleClickTheme('red')">
       点击我测试动态主题
-    </uv-button>
+    </wd-button>
   </view>
 </template>
 
@@ -44,6 +44,6 @@ function handleClickTheme(color: string) {
 .title {
   font-size: 24rpx;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--wot-color-theme);
 }
 </style>

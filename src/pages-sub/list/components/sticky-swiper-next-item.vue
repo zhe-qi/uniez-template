@@ -122,7 +122,7 @@ defineExpose({
     <z-paging
       ref="paging" v-model="dataList" use-page-scroll :scrollable="false" :hide-empty-view="hideEmptyView"
       :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false"
-      :style="{ width: '100%', backgroundColor: themeVars['--color-bg'] }" auto-show-system-loading @query="queryList"
+      :style="{ width: '100%' }" auto-show-system-loading @query="queryList"
       @content-height-changed="contentHeightChanged"
     >
       <!-- box-white 来自于 unocss.config.mts，可以被后面的类名覆盖，例如自带的是p-4但是我改成了 p-2 -->
@@ -142,9 +142,9 @@ defineExpose({
           </view>
         </view>
         <view>
-          <button type="primary" class="h-fit text-base">
+          <wd-button class="h-fit text-base">
             按钮
-          </button>
+          </wd-button>
         </view>
       </view>
     </z-paging>

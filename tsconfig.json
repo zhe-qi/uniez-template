@@ -10,7 +10,8 @@
       "@dcloudio/types",
       "z-paging/types",
       "@types/wechat-miniprogram",
-      "@uni-helper/uni-app-types"
+      "@uni-helper/uni-app-types",
+      "wot-design-uni/global"
     ],
     "sourceMap": true
   },

@@ -39,9 +39,7 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      primary: 'var(--primary,#0957DE)',
-      info: 'var(--info)',
-      background: 'var(--color-bg)',
+      primary: 'var(--wot-color-theme,#0957DE)',
     },
     fontSize: {
       'mini': ['18rpx', '26rpx'],

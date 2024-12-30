@@ -5,7 +5,7 @@
 <template>
   <view class="flex">
     测试插槽，支持所有插槽种类：
-    <view class="text-blue-500">
+    <view class="text-primary">
       <slot />
     </view>
   </view>

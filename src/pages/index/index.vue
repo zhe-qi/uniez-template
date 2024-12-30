@@ -14,8 +14,6 @@
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 
 const router = useRouter();
-const appStore = useAppStore();
-
 const title = ref('一个“功能”和“开发体验”优先的 uniapp 的模板');
 
 const proxy = getCurrentInstance()?.proxy;
@@ -63,17 +61,17 @@ onMounted(() => {
     </view>
 
     <view class="mt-8 flex flex-col gap-4">
-      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="toListPage">
+      <wd-button @click="toListPage">
         跳转分包页面
-      </uv-button>
+      </wd-button>
 
-      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="router.push({ name: 'TestPage' })">
+      <wd-button @click="router.push({ name: 'TestPage' })">
         跳转测试 component is 页面
-      </uv-button>
+      </wd-button>
 
-      <uv-button type="primary" :color="appStore.themeVars['--primary']" @click="router.push({ name: 'Theme' })">
+      <wd-button @click="router.push({ name: 'Theme' })">
         跳转测试动态主题测试页面
-      </uv-button>
+      </wd-button>
     </view>
 
     <TabBar :index="0" />

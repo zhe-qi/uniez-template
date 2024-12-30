@@ -1,14 +1,13 @@
+import type { ConfigProviderThemeVars } from 'wot-design-uni';
 import { defineStore } from 'pinia';
 
 export const useAppStore = defineStore('AppStore', () => {
-  /** 全局动态主题 */
-  const themeVars = ref({
-    '--primary': '#0957DE',
-    '--primary-hover': '#818cf8',
-    '--info': '#697387',
-    '--text-color': '#333333',
-    '--color-bg': '#f9f9f9',
+  /** 组件库动态主题 */
+  const themeVars = ref<ConfigProviderThemeVars>({
+    colorTheme: '#0957DE',
   });
+
+  const theme = ref<'light' | 'dark'>('light');
 
   /**
    * 关于持久化，可以导入 getCache 和 setCache 函数,可以设置过期时间可以设置默认值
@@ -22,5 +21,6 @@ export const useAppStore = defineStore('AppStore', () => {
 
   return {
     themeVars,
+    theme,
   };
 });

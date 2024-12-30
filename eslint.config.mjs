@@ -14,7 +14,6 @@ export default antfu({
     'style/semi': ['error', 'always'],
     'style/semi-style': ['error', 'last'],
     'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    'vue/script-indent': ['error', 2, { baseIndent: 0 }],
     'no-console': 'off',
     'no-debugger': 'off',
     'no-useless-catch': 'off',

@@ -89,15 +89,26 @@ function rpx2px(rpx: number) {
   return uni.upx2px(rpx);
   // #endif
 }
+
+function handleClickLeft() {
+  uni.navigateBack({
+    fail: () => {
+      uni.reLaunch({
+        url: '/pages/index/index',
+      });
+    },
+  });
+}
 </script>
 
 <template>
   <view class="h-full">
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
-        <zq-navbar left-icon :bg="appStore.themeVars['--color-bg']">
-          {{ title }}
-        </zq-navbar>
+        <wd-navbar
+          title="列表" left-text="返回" safe-area-inset-top left-arrow placeholder :fixed="true"
+          @click-left="handleClickLeft"
+        />
       </template>
       <view class="banner-view h-250 flex-center">
         <view class="flex flex-col">
@@ -109,7 +120,7 @@ function rpx2px(rpx: number) {
         <!-- 小程序中直接修改组件style为position: sticky;无效，需要在组件外层套一层view -->
         <view class="sticky top-0 z-100">
           <z-tabs
-            ref="tabs" :current="current" :list="tabList" :active-color="appStore.themeVars['--primary']"
+            ref="tabs" :current="current" :list="tabList" :active-color="appStore.themeVars.colorTheme"
             @change="tabsChange"
           />
         </view>
@@ -137,7 +148,7 @@ function rpx2px(rpx: number) {
 <style lang="scss" scoped>
 .banner-view {
   // 演示css变量用法
-  background-color: var(--primary);
+  background-color: var(--wot-color-theme);
   color: white;
 }
 
