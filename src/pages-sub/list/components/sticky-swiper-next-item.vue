@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { storeToRefs } from 'pinia';
-
 // Props 定义
 const props = defineProps<{
   tabIndex: number
@@ -11,9 +9,6 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: 'heightChanged', height: number): void
 }>();
-
-const appStore = useAppStore();
-const { themeVars } = storeToRefs(appStore);
 
 // 模拟数据
 async function generateMockData(size: number) {

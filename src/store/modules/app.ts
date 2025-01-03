@@ -3,10 +3,26 @@ import { ThemeModeEnum } from '@/enums/appEnum';
 import { defineStore } from 'pinia';
 
 export const useAppStore = defineStore('AppStore', () => {
-  /** 组件库动态主题 */
-  const themeVars = ref<ConfigProviderThemeVars>({
-    colorTheme: '#0957DE',
-  });
+  /** 组件库动态主题，持久化示例 */
+  // const themeVars = ref<ConfigProviderThemeVars>(getCache('themeVars') ?? {});
+  // // 持久化和模拟异步获取，10分钟过期，null 不过期，不传时间走 undefined 默认7天
+  // watch(themeVars, (newVal) => {
+  //   setCache('themeVars', newVal, 60 * 10);
+  // });
+  // function getThemeVars() {
+  //   return new Promise<ConfigProviderThemeVars>((resolve) => {
+  //     setTimeout(() => {
+  //       resolve({
+  //         colorTheme: '#0957DE',
+  //       });
+  //     });
+  //   });
+  // }
+  // getThemeVars().then((res) => {
+  //   themeVars.value = res;
+  // });
+
+  const themeVars = ref<ConfigProviderThemeVars>({ colorTheme: '#0957DE' });
 
   const theme = ref<ThemeModeEnum>(ThemeModeEnum.LIGHT);
 
