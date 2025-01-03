@@ -3,6 +3,6 @@ import 'vue';
 
 declare module '@vue/runtime-core' {
   type Hooks = App.AppInstance & Page.PageInstance;
-  interface ComponentCustomProperties extends UtilityTypes {}
+  interface ComponentCustomProperties extends GlobalUtilityTypes {}
   interface ComponentCustomOptions extends Hooks {}
 }

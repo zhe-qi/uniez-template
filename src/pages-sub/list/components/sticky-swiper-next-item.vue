@@ -10,6 +10,9 @@ const emit = defineEmits<{
   (e: 'heightChanged', height: number): void
 }>();
 
+// proxy
+const proxy = getCurrentInstance()?.proxy;
+
 // 模拟数据
 async function generateMockData(size: number) {
   if (props.currentIndex % 2 === 1) {
@@ -56,7 +59,10 @@ watch(
 // });
 
 // 查询列表数据
-async function queryList(pageNo: number, pageSize: number) {
+async function queryList(_pageNo: number, pageSize: number) {
+  // 可选等待应用启动完成如果依赖全局异步等待
+  await proxy?.$appLaunchedPromise;
+
   try {
     const mockData = await generateMockData(pageSize);
     paging.value?.complete(mockData);
