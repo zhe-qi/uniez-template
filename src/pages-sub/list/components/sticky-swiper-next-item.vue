@@ -10,7 +10,7 @@ const emit = defineEmits<{
   (e: 'heightChanged', height: number): void
 }>();
 
-// proxy and resolve
+// proxy and resolvers
 const proxy = getCurrentInstance()?.proxy;
 const { promise, resolve } = Promise.withResolvers();
 
@@ -55,7 +55,11 @@ watch(
 );
 
 onLoad(async () => {
+  // 假如说还有其他的情况，在这里并行
   await proxy?.$appLaunchedPromise;
+  // 假如说还有其他的情况，在这里执行
+
+  // 然后对 queryList 进行放行
   resolve(void 0);
 });
 
@@ -128,9 +132,8 @@ defineExpose({
   <view class="content bg-background">
     <z-paging
       ref="paging" v-model="dataList" use-page-scroll :scrollable="false" :hide-empty-view="hideEmptyView"
-      :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false"
-      :style="{ width: '100%' }" auto-show-system-loading @query="queryList"
-      @content-height-changed="contentHeightChanged"
+      :refresher-enabled="false" :auto="false" :auto-clean-list-when-reload="false" :style="{ width: '100%' }"
+      auto-show-system-loading @query="queryList" @content-height-changed="contentHeightChanged"
     >
       <!-- box-white 来自于 unocss.config.mts，可以被后面的类名覆盖，例如自带的是p-4但是我改成了 p-2 -->
       <view
