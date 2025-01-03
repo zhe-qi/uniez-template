@@ -10,8 +10,9 @@ const emit = defineEmits<{
   (e: 'heightChanged', height: number): void
 }>();
 
-// proxy
+// proxy and resolve
 const proxy = getCurrentInstance()?.proxy;
+const { promise, resolve } = Promise.withResolvers();
 
 // 模拟数据
 async function generateMockData(size: number) {
@@ -53,6 +54,11 @@ watch(
   { immediate: true },
 );
 
+onLoad(async () => {
+  await proxy?.$appLaunchedPromise;
+  resolve(void 0);
+});
+
 /** 走接口示例 */
 // const { send: sendUserList } = useRequest(data => Apis.general.get_api_users_list(data), {
 //   immediate: false,
@@ -60,8 +66,8 @@ watch(
 
 // 查询列表数据
 async function queryList(_pageNo: number, pageSize: number) {
-  // 可选等待应用启动完成如果依赖全局异步等待
-  await proxy?.$appLaunchedPromise;
+  // 可选等待应用启动完成如果依赖全局异步等待和onLoad等待
+  await promise;
 
   try {
     const mockData = await generateMockData(pageSize);
