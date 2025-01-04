@@ -26,18 +26,27 @@ export const useAppStore = defineStore('AppStore', () => {
 
   const theme = ref<ThemeModeEnum>(ThemeModeEnum.LIGHT);
 
-  /**
-   * 关于持久化，可以导入 getCache 和 setCache 函数,可以设置过期时间可以设置默认值
-   *
-   * 例如：
-   * const theme = ref(getCache('theme') ?? {})
-   *
-   * 然后使用watch监听theme的修改同时使用setCache持久化
-   * 当然也可以使用computed 的 get 和 set 方法
-   */
+  /** 初始化全局异步等待 */
+  const initGlobalAsync = async () => {
+    // 数组里可以放入您想要在页面加载之前需要执行的一些逻辑。
+    // 例如：初始化全局参数、初始化字典等操作，不影响ui和页面加载，除非刻意等待。
+
+    // 在并行执行的方法之前执行的逻辑
+    // ...
+
+    // 并行执行的所有方法
+    await Promise.all([
+      // 初始化全局参数
+      // 初始化字典
+      // 并行执行的方法
+    ]);
+    // 在并行执行的方法之后执行的逻辑
+    // ...
+  };
 
   return {
     themeVars,
     theme,
+    initGlobalAsync,
   };
 });
