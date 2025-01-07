@@ -8,6 +8,15 @@ const proxy = getCurrentInstance()?.proxy;
 const appStore = useAppStore();
 
 onLaunch(async () => {
+  // #ifdef H5
+  const { MODE } = import.meta.env;
+  // 可以继续增加条件，比如嵌套在 小程序、app 内的情况，当前仅校验是否h5的开发环境
+  if (MODE === 'development') {
+    const Vconsole = await import('vconsole').then(res => res.default);
+    void new Vconsole();
+  }
+  // #endif
+
   // 调用初始化全局异步等待
   await appStore.initGlobalAsync();
   // 通知页面加载完成
@@ -38,6 +47,5 @@ button[type='primary']:hover {
 :global(.uni-tabbar) {
   visibility: hidden;
 }
-
 /* #endif */
 </style>

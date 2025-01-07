@@ -44,6 +44,14 @@
       "meta": {
         "ignoreAuth": true
       }
+    },
+    {
+      "path": "pages/webview/webview",
+      "type": "page",
+      "name": "Webview",
+      "style": {
+        "navigationBarTitleText": ""
+      }
     }
   ],
   "preloadRule": {

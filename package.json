@@ -109,6 +109,7 @@
     "unocss-preset-weapp": "0.65.0",
     "unplugin-auto-import": "^0.19.0",
     "upload-assets-to-cdn": "^0.1.0",
+    "vconsole": "^3.15.1",
     "vite": "6.0.7",
     "vue-tsc": "2.2.0"
   },

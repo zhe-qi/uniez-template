@@ -8,6 +8,7 @@ interface NavigateToOptions {
        "/pages/my/my" |
        "/pages/test-page/test-page" |
        "/pages/theme/theme" |
+       "/pages/webview/webview" |
        "/pages-sub/list/list";
 }
 interface RedirectToOptions extends NavigateToOptions {}

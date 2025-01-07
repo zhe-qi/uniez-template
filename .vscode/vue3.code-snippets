@@ -9,7 +9,7 @@
       "  \"style\": {",
       "    \"navigationBarTitleText\": \"$2\"",
       "  }",
-      "},",
+      "}",
       "</route>\n",
       "<script lang=\"ts\" setup>",
       "//$3",
