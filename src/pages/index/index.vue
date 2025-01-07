@@ -33,6 +33,24 @@ function toListPage() {
   });
 }
 
+function handleWebview() {
+  const url = `https://www.baidu.com/s?wd=uniez-template&_t=${Date.now()}`;
+  let title = '我是h5标题';
+
+  // #ifdef MP-WEIXIN
+  // 小程序使用h5的标题
+  title = '加载中...';
+  // #endif
+
+  router.push({
+    name: 'Webview',
+    params: {
+      title,
+      url: encodeURIComponent(url),
+    },
+  });
+}
+
 onMounted(() => {
   // #ifdef H5
   // 预加载h5页面，h5可以预加载，记得删掉
@@ -73,15 +91,7 @@ onMounted(() => {
         跳转测试动态主题测试页面
       </wd-button>
 
-      <wd-button
-        @click="router.push({
-          name: 'Webview',
-          params: {
-            title: '我是标题',
-            url: encodeURIComponent(`https://www.baidu.com/s?wd=uniez-template&_t=${Date.now()}`),
-          },
-        })"
-      >
+      <wd-button @click="handleWebview">
         跳转测试webview页面
       </wd-button>
     </view>
