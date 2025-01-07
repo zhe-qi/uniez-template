@@ -5,7 +5,6 @@ import { defineStore } from 'pinia';
 export const useAppStore = defineStore('AppStore', () => {
   /** 组件库动态主题，持久化示例 */
   // const themeVars = ref<ConfigProviderThemeVars>(getCache('themeVars') ?? {});
-  // // 持久化和模拟异步获取，10分钟过期，null 不过期，不传时间走 undefined 默认7天
   // watch(themeVars, (newVal) => {
   //   setCache('themeVars', newVal, 60 * 10);
   // });
