@@ -72,6 +72,18 @@ onMounted(() => {
       <wd-button @click="router.push({ name: 'Theme' })">
         跳转测试动态主题测试页面
       </wd-button>
+
+      <wd-button
+        @click="router.push({
+          name: 'Webview',
+          params: {
+            title: '我是标题',
+            url: encodeURIComponent(`https://www.baidu.com/s?wd=uniez-template&_t=${Date.now()}`),
+          },
+        })"
+      >
+        跳转测试webview页面
+      </wd-button>
     </view>
 
     <TabBar :index="0" />
