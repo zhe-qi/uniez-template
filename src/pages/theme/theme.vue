@@ -13,6 +13,11 @@
 <script lang="ts" setup>
 const appStore = useAppStore();
 
+const colors = {
+  green: 'green',
+  red: 'red',
+};
+
 function handleClickTheme(color: string) {
   appStore.themeVars.colorTheme = color;
 }
@@ -27,14 +32,14 @@ function handleClickTheme(color: string) {
     <view class="title">
       我是绿色主题
     </view>
-    <wd-button type="primary" @click="handleClickTheme('green')">
+    <wd-button type="primary" @click="handleClickTheme(colors.green)">
       点击我测试动态主题
     </wd-button>
 
     <view class="title">
       我是红色主题
     </view>
-    <wd-button type="primary" @click="handleClickTheme('red')">
+    <wd-button type="primary" @click="handleClickTheme(colors.red)">
       点击我测试动态主题
     </wd-button>
   </view>

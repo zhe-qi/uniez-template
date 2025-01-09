@@ -23,7 +23,7 @@ const title = ref('你好');
 onLoad((options) => {
   if (options?.title) {
     title.value = options?.title;
-    console.log(route.params, options);
+    console.log(route.params, options, route.params?.title === options.title);
   }
 });
 
