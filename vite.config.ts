@@ -21,5 +21,21 @@ export default async ({ mode }) => {
       'ROUTES': new TransformPages().routes,
       'import.meta.env': env,
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
+    // server: {
+    //   proxy: {
+    //     '/api': {
+    //       target: env.VITE_APP_BASEURL,
+    //       changeOrigin: true,
+    //       rewrite: path => path.replace(/^\/api/, ''),
+    //     },
+    //   },
+    // },
   });
 };
