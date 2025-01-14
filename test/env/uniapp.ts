@@ -1,4 +1,4 @@
-import type { Environment } from 'vitest';
+import type { Environment } from 'vitest/environments';
 import uni from '@dcloudio/uni-h5';
 import { Window } from 'happy-dom';
 import { populateGlobal } from 'vitest/environments';
