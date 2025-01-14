@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 // Props 定义
 const props = defineProps<{
-  tabIndex: number
-  currentIndex: number
+  tabIndex: number;
+  currentIndex: number;
 }>();
 
 // Emits 定义
 const emit = defineEmits<{
-  heightChanged: [height: number]
+  heightChanged: [height: number];
 }>();
 
 // proxy and resolvers
