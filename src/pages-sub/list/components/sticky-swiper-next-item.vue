@@ -7,7 +7,7 @@ const props = defineProps<{
 
 // Emits 定义
 const emit = defineEmits<{
-  (e: 'heightChanged', height: number): void
+  heightChanged: [height: number]
 }>();
 
 // proxy and resolvers

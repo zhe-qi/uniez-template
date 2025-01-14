@@ -12,6 +12,7 @@
     "antfu.unocss",
     "uni-helper.uni-helper-vscode",
     "vue.volar",
-    "cpylua.language-postcss"
+    "cpylua.language-postcss",
+    "vitest.explorer"
   ]
 }

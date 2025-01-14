@@ -1,3 +1,5 @@
+/// <reference types="vitest/config" />
+
 import path from 'node:path';
 import TransformPages from 'uni-read-pages-vite';
 import { defineConfig, loadEnv } from 'vite';
@@ -27,6 +29,14 @@ export default async ({ mode }) => {
           api: 'modern-compiler',
         },
       },
+    },
+    test: {
+      // environment: path.resolve(__dirname, './test/env/uniapp.ts'),
+      // environmentOptions: {
+      //   uniapp: {
+      //     domEnvironment: 'happy-dom',
+      //   },
+      // },
     },
     // server: {
     //   proxy: {
