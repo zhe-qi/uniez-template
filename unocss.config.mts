@@ -46,6 +46,7 @@ export default defineConfig({
       /** 可以继续添加颜色变量 */
     },
     fontSize: {
+      /** 提供更小号的字体 */
       'mini': ['18rpx', '26rpx'],
       '2xs': ['20rpx', '28rpx'],
       '3xs': ['18rpx', '26rpx'],

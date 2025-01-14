@@ -5,9 +5,12 @@ import antfu from '@antfu/eslint-config';
  * @see https://github.com/antfu/eslint-config
  */
 export default antfu({
-  formatters: true,
   vue: true,
   unocss: true,
+  stylistic: {
+    semi: true,
+  },
+  formatters: true,
   rules: {
     'style/indent': ['error', 2, { SwitchCase: 2 }],
     'style/quotes': ['error', 'single'],
