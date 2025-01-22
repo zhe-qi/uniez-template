@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
-  desc: string
+  desc: string;
 }>();
 </script>
 

@@ -10,12 +10,12 @@ declare module '*.vue' {
 
 interface ImportMetaEnv {
   /** 接口请求基础地址 */
-  VITE_APP_BASEURL: string
+  VITE_APP_BASEURL: string;
   /** 应用标题 */
-  VITE_APP_TITLE: string
+  VITE_APP_TITLE: string;
   /** 继续添加您需要的环境变量类型提示 */
 }
 
 interface ImportMeta {
-  readonly env: ImportMetaEnv
+  readonly env: ImportMetaEnv;
 }

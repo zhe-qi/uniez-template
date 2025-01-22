@@ -37,33 +37,33 @@ interface ComponentResolverOptions {
        *   radio: './components/form/radio.vue'
        * }
        */
-      [key: string]: string
-    }
-  }
+      [key: string]: string;
+    };
+  };
   /**
    * 平台配置
    * @default ['app', /^mp(-.*)?$/]
    */
-  platforms?: (string | RegExp)[]
+  platforms?: (string | RegExp)[];
   /**
    * 需要处理的文件类型
    * @default ['*.vue', '*.nvue']
    */
-  include?: string[]
+  include?: string[];
   /**
    * 需要排除的文件
    */
-  exclude?: string[]
+  exclude?: string[];
   /**
    * 是否启用调试模式
    * @default false
    */
-  debug?: boolean
+  debug?: boolean;
   /**
    * 解析路径
    * @default process.cwd()
    */
-  resolve?: string
+  resolve?: string;
 }
 
 // 调试日志相关函数

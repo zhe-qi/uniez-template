@@ -14,14 +14,14 @@ import { alovaInstance } from '@/api';
 
 type ApiAppSysAuthLoginPost = {
   data: {
-    code: string
-    appId: string
-  }
+    code: string;
+    appId: string;
+  };
 };
 type ApiAppSysAuthLoginPostResponse = {
   data: {
-    token: string
-  }
+    token: string;
+  };
 };
 export function apiAppSysAuthLoginPost(data: ApiAppSysAuthLoginPost):
 PromiseLike<ApiAppSysAuthLoginPostResponse> {
@@ -30,13 +30,13 @@ PromiseLike<ApiAppSysAuthLoginPostResponse> {
 
 type ApiAppSysAuthUserinfoGet = {
   data: {
-    id: string
-  }
+    id: string;
+  };
 };
 type ApiAppSysAuthUserinfoGetResponse = {
   data: {
-    name: string
-  }
+    name: string;
+  };
 };
 export function apiAppSysAuthUserinfoGet(data: ApiAppSysAuthUserinfoGet): PromiseLike<ApiAppSysAuthUserinfoGetResponse> {
   return alovaInstance.Get('/api/userinfo', {

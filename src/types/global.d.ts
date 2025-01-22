@@ -4,7 +4,7 @@ declare global {
   type GlobalUtilityTypes = UtilityTypes;
 
   interface ParamsType {
-    [key: string]: any
+    [key: string]: any;
   }
 
   const ROUTES: [];

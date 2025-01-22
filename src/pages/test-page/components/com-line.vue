@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 const props = defineProps<{
-  desc: string
+  desc: string;
 }>();
 
 const emit = defineEmits<{
-  (e: 'clickCustomEvent', desc: string): void
+  (e: 'clickCustomEvent', desc: string): void;
 }>();
 
 const appStore = useAppStore();

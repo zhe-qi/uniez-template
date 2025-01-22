@@ -3,31 +3,31 @@ import uploadAssetsToCdn from 'upload-assets-to-cdn';
 
 // 声明 OSS 客户端的类型，避免直接依赖 ali-oss
 interface OSSClient {
-  put: (path: string, file: any) => Promise<{ url: string }>
+  put: (path: string, file: any) => Promise<{ url: string }>;
 }
 
 interface OssConfig {
-  type: 'oss'
-  client: OSSClient
-  prefix?: string
+  type: 'oss';
+  client: OSSClient;
+  prefix?: string;
 }
 
 interface HttpConfig {
-  type: 'http'
-  url: string
-  formData?: Record<string, any>
-  headers?: Record<string, any>
-  responseHandler?: (response: any) => string
+  type: 'http';
+  url: string;
+  formData?: Record<string, any>;
+  headers?: Record<string, any>;
+  responseHandler?: (response: any) => string;
 }
 
 interface CommonConfig {
-  enable?: boolean
-  exclude?: string[]
-  include?: string[]
-  isCompress?: boolean
-  isCache?: boolean
-  isDeleteOriginAsset?: boolean
-  compressOptions?: Record<string, any>
+  enable?: boolean;
+  exclude?: string[];
+  include?: string[];
+  isCompress?: boolean;
+  isCache?: boolean;
+  isDeleteOriginAsset?: boolean;
+  compressOptions?: Record<string, any>;
 }
 
 type CdnUploadConfig = CommonConfig & (OssConfig | HttpConfig);

@@ -8,14 +8,14 @@ import ECB from 'crypto-js/mode-ecb';
 import pkcs7 from 'crypto-js/pad-pkcs7';
 
 interface CipherOption {
-  mode?: typeof mode.ECB
-  padding?: typeof pad.Pkcs7
-  iv?: lib.WordArray
+  mode?: typeof mode.ECB;
+  padding?: typeof pad.Pkcs7;
+  iv?: lib.WordArray;
 }
 
 export interface EncryptionParams {
-  key: string
-  iv: string
+  key: string;
+  iv: string;
 }
 
 /**
