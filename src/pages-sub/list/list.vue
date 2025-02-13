@@ -111,7 +111,7 @@ function handleClickLeft() {
           @click-left="handleClickLeft"
         />
       </template>
-      <view class="banner-view h-250 flex-center">
+      <view class="h-250 flex-center bg-[var(--wot-color-theme)] text-white">
         <view class="flex flex-col">
           <text>下方tab滚动时可吸附在顶部，可左右滑动列表</text>
           <text>模拟数据加载，150ms后加载完成</text>
@@ -126,7 +126,7 @@ function handleClickLeft() {
           />
         </view>
         <swiper
-          class="swiper" :style="[{ height: `${swiperHeight}px` }]" :current="current"
+          class="h-1000" :style="[{ height: `${swiperHeight}px` }]" :current="current"
           @transition="swiperTransition" @animationfinish="swiperAnimationfinish"
         >
           <swiper-item v-for="(item, index) in tabList" :key="index" class="swiper-item">
@@ -147,13 +147,5 @@ function handleClickLeft() {
 </template>
 
 <style lang="scss" scoped>
-.banner-view {
-  // 演示css变量用法
-  background-color: var(--wot-color-theme);
-  color: white;
-}
-
-.swiper {
-  height: 1000px;
-}
+//
 </style>

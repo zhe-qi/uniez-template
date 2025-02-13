@@ -163,8 +163,7 @@ defineExpose({
 
 <style lang="postcss" scoped>
 .content {
-  height: 100%;
-  width: 100%;
+  @apply size-full;
 }
 
 .title {

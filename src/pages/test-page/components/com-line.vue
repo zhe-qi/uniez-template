@@ -6,8 +6,6 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: 'clickCustomEvent', desc: string): void;
 }>();
-
-const appStore = useAppStore();
 </script>
 
 <template>

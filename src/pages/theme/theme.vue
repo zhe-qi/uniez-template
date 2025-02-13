@@ -45,10 +45,8 @@ function handleClickTheme(color: string) {
   </view>
 </template>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .title {
-  font-size: 24rpx;
-  font-weight: 500;
-  color: var(--wot-color-theme);
+  @apply text-24px font-500 text-[var(--wot-color-theme)];
 }
 </style>

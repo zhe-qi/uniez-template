@@ -7,6 +7,7 @@ export const useAppStore = defineStore('AppStore', () => {
   // const themeVars = ref<ConfigProviderThemeVars>(getCache('themeVars') ?? {});
   // watch(themeVars, (newVal) => {
   //   setCache('themeVars', newVal, 60 * 10);
+  //   themeVars.value = newVal;
   // });
   // function getThemeVars() {
   //   return new Promise<ConfigProviderThemeVars>((resolve) => {

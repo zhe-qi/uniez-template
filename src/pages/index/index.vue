@@ -53,7 +53,7 @@ function handleWebview() {
 
 onMounted(() => {
   // #ifdef H5
-  // 预加载h5页面，h5可以预加载，记得删掉
+  // TODO: 预加载h5页面，h5可以预加载，记得删掉
   uni.preloadPage({
     url: '/pages-sub/list/list',
   });
