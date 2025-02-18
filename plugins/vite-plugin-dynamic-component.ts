@@ -152,13 +152,13 @@ export default function componentResolver(options: ComponentResolverOptions): Pl
       let hasChanges = false;
       const usedComponents: Record<string, string> = {};
 
-      code = code.replace(componentRegex, (match, start, attrs, end) => {
+      code = code.replace(componentRegex, (match, _, attrs, end) => {
         let cementingName = '';
         let slotContent = '';
         let itemName = '';
 
         // 提取 cementing 属性
-        attrs = attrs.replace(/cementing="(.*?)"/, (_, name) => {
+        attrs = attrs.replace(/cementing="(.*?)"/, (_: string, name: string) => {
           cementingName = name;
           return '';
         });
@@ -210,7 +210,7 @@ export default function componentResolver(options: ComponentResolverOptions): Pl
 
       // 处理脚本部分
       // eslint-disable-next-line regexp/no-super-linear-backtracking
-      code = code.replace(/(<script.*?>)(.*?)(<\/script>)/gs, (match, openScript, content, closeScript) => {
+      code = code.replace(/(<script.*?>)(.*?)(<\/script>)/gs, (_, openScript, content, closeScript) => {
         const ms = new MagicString(content);
         const isSetup = openScript.includes('setup') || content.includes('<script setup');
 
