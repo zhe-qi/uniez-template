@@ -1,4 +1,3 @@
-import path from 'node:path';
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest';
 import { loadEnv } from 'vite';
 import { description, name, version } from './package.json';
@@ -7,7 +6,7 @@ const {
   VITE_APP_UNI_APPID,
   VITE_APP_ROUTER_BASE,
   VITE_APP_WX_APPID,
-} = loadEnv(process.env.NODE_ENV!, path.resolve(process.cwd(), 'env'));
+} = loadEnv(process.env.NODE_ENV!, process.cwd());
 
 export default defineManifestConfig({
   'name': name,
