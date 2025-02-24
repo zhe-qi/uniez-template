@@ -75,12 +75,12 @@
     "qs": "6.5.3",
     "vue": "^3.5.13",
     "vue-i18n": "9.14.2",
-    "wot-design-uni": "^1.7.0",
+    "wot-design-uni": "^1.7.1",
     "z-paging": "2.8.5"
   },
   "devDependencies": {
     "@alova/wormhole": "^1.0.6",
-    "@antfu/eslint-config": "^4.2.1",
+    "@antfu/eslint-config": "^4.3.0",
     "@dcloudio/types": "^3.4.14",
     "@dcloudio/uni-automator": "3.0.0-alpha-4050220250208001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-4050220250208001",
@@ -120,8 +120,8 @@
     "vconsole": "^3.15.1",
     "vite": "^6.0.11",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "3.0.5",
-    "vue-tsc": "^2.2.2"
+    "vitest": "3.0.6",
+    "vue-tsc": "^2.2.4"
   },
   "resolutions": {
     "bin-wrapper": "npm:bin-wrapper-china"
