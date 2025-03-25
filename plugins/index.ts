@@ -6,6 +6,7 @@ import uniPages from '@uni-helper/vite-plugin-uni-pages';
  * 分包优化、模块异步跨包调用、组件异步跨包引用
  * @see https://github.com/uni-ku/bundle-optimizer
  */
+import Optimization from '@uni-ku/bundle-optimizer';
 import legacy from '@vitejs/plugin-legacy';
 import AutoImport from 'unplugin-auto-import/vite';
 
@@ -46,6 +47,18 @@ export async function getPlugins() {
       dts: 'src/types/auto-import.d.ts',
       dirs: ['src/hooks', 'src/store/modules'],
       vueTemplate: true,
+    }),
+    // Optimization 插件需要 page.json 文件，故应在 UniPages 插件之后执行
+    Optimization({
+      enable: {
+        'optimization': true,
+        'async-import': true,
+        'async-component': true,
+      },
+      dts: {
+        base: 'src/types',
+      },
+      logger: false,
     }),
     ...(legacyPlugin ? [legacyPlugin] : []),
     ...plugins,
