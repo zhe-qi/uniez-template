@@ -116,7 +116,7 @@
     "uni-read-pages-vite": "^0.0.6",
     "unocss": "66.0.0",
     "unocss-preset-weapp": "66.0.0",
-    "unplugin-auto-import": "^19.1.1",
+    "unplugin-auto-import": "^19.1.2",
     "upload-assets-to-cdn": "^0.1.0",
     "vconsole": "^3.15.1",
     "vite": "^6.2.3",
