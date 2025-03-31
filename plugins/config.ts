@@ -29,7 +29,7 @@ const dynamicComponent = vitePluginDynamicComponent({
 // eslint-disable-next-line prefer-const
 let cdnUpload: Plugin | null = null;
 
-// 上传到阿里云OSS
+// 上传到阿里云OSS（原则上不建议前端写死，建议用STS的方式）
 // cdnUpload = new OSS({
 //   region: 'oss-cn-shanghai',
 //   bucket: 'my-pic-lib',

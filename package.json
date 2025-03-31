@@ -90,7 +90,7 @@
     "@iconify-json/lucide": "^1.2.32",
     "@rollup/pluginutils": "^5.1.4",
     "@types/crypto-js": "^4.2.2",
-    "@types/node": "^22.13.13",
+    "@types/node": "^22.13.14",
     "@types/wechat-miniprogram": "^3.4.8",
     "@uni-helper/uni-app-types": "1.0.0-alpha.6",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.10",
