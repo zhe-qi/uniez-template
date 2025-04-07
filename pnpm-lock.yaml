@@ -18,53 +18,53 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2
       '@dcloudio/uni-app':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-app-harmony':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-app-plus':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-components':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-h5':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-alipay':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-baidu':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-harmony':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-jd':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-kuaishou':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-lark':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-qq':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-toutiao':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-weixin':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-mp-xhs':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-quickapp-webview':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@vueuse/core':
         specifier: ^13.0.0
         version: 13.0.0(vue@3.5.13(typescript@5.8.3))
@@ -109,20 +109,20 @@ importers:
         specifier: ^3.4.14
         version: 3.4.14
       '@dcloudio/uni-automator':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-cli-shared':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@dcloudio/uni-stacktracey':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001
       '@dcloudio/vite-plugin-uni':
-        specifier: 3.0.0-alpha-4050720250320001
-        version: 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+        specifier: 3.0.0-alpha-4060120250403001
+        version: 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@iconify-json/lucide':
-        specifier: ^1.2.32
-        version: 1.2.32
+        specifier: ^1.2.34
+        version: 1.2.34
       '@rollup/pluginutils':
         specifier: ^5.1.4
         version: 5.1.4(rollup@4.34.6)
@@ -927,28 +927,28 @@ packages:
   '@dcloudio/types@3.4.14':
     resolution: {integrity: sha512-VolQeZfTh8pQFsr2IlfIVX93blfvGTuBoJuZUc7iWOqtHV8gDrq6fXLhzsVlgZyuhhRZLOxlo33rkEqnY+ucAw==}
 
-  '@dcloudio/uni-app-harmony@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-C76LpG/kXhKSacjTVJeaM/8illAaEHwGp9UFC3CYJn37dA4NO+Se5qYvlc+vU/aepixwDcNEGqMtg6tVmZCXMA==}
+  '@dcloudio/uni-app-harmony@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-xPTF/meP+C1SPYabCWoUtO7Kv0wKl4U8pybDXFwFEpMNllvZf9jw1k1YN81NaPnoACqCgtTX1g0QeQpUbVW/bQ==}
 
-  '@dcloudio/uni-app-plus@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-PTrb8eTVvssU3Sg7UFo53nqTarPVnmRl20lPGI0t2yX5vKhGqZk6/9tgESOYy29Qum2M9peNccup7kS7M202Zw==}
+  '@dcloudio/uni-app-plus@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-i6kITMT+gt77E2vcFaijCOIg+1ddr6Xzh/EtVCigmL+FelckY3hPD8jsT+k+cwKzd30XbRDZtnc5AKmQdGcyVA==}
 
-  '@dcloudio/uni-app-uts@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-D/izGfmsAdcdkRVsJQ8AqDYhWqH1yoLFyQ5mEvzmM1fseaQp7oR371wBevYEr7i7DGvlULrj3fARzJzvKDMLew==}
+  '@dcloudio/uni-app-uts@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-QZblQks3IhKdwunAJuQemT4rrB5w7Atv77GW892HdbHyEEqy8M/nhOZMcYkBaqjXmeb8M8YarTF6LOyUWAXe6A==}
 
-  '@dcloudio/uni-app-vite@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-TmV+vjEiGkM6xNzX8EkgWk0B11gXu0RVCYzcopQkc7o44KMaEJL5guF89zU5DBkvJaEEFhWXGBHYZs1HmTxzjg==}
+  '@dcloudio/uni-app-vite@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-W/WpLKdAnJhT5K9NswAv9va0yR0ZQUwKAue+22F0CWOWCL12sDI4xcwL1TDN7FuYEYSglaEA03fKvy3Ms0K+ZQ==}
 
-  '@dcloudio/uni-app-vue@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-VoMbQ+4qNH08ZUCpDEHU5MQeN1ayH20Cm8MsuAgwVDAgTAZRwAVyv24gxzWnndzWHOj35xkuFj+yJs4heiAC6g==}
+  '@dcloudio/uni-app-vue@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-5AyFWeDriLygTOpMLvZcu2/gge3yUB7koOuNXhvJ2utmQKOR7CgrPBK/gYtLk7bTrZUBZ570GDVnZzdayFGlhQ==}
 
-  '@dcloudio/uni-app@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-bz6Uv7dJJlPe1+x0aUuRJ2cym39r9opFEaTLbxYQpVUu4wO02kW1vl8vFKadYBPkw3nZfFlDE4SiWTtcuBW56A==}
+  '@dcloudio/uni-app@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-KM9xHt1OsYYwpInbAHNaUcZ+GGUK/q7hoEbhvKcs6LWERQab7llFvNfHYi0d7DV4stc22jI5p4CSuJ9a4/YBWg==}
     peerDependencies:
       '@dcloudio/types': ^3.4.14
 
-  '@dcloudio/uni-automator@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-GYQ6NhefDFJCtYzhFVoeJonoq44bJLwIY5zC8/pxTwlYFS31GQ/qCASHA4XRv8MAn39ucg5Lbe6ticPFmyJYuA==}
+  '@dcloudio/uni-automator@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-IVq07gqjCYnMFDtST/TPnizVG7oU3fhE4Og4N/BWMoDCGKtofA49FmWyB0Nfrup1GLC3M6KP/XO8c0zz297ZnQ==}
     peerDependencies:
       jest: 27.0.4
       jest-environment-node: 27.5.1
@@ -957,96 +957,96 @@ packages:
     resolution: {integrity: sha512-zWIMxjyc8OdpZU1/ivEfjQQa5jNk2sThIkBS6hM3rs7E68HE6cAxPZqZh9CY0LuM8XsAgILIoY77yTcCM3vMJQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@dcloudio/uni-cli-shared@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-zjEFTGdpVCvQH4xryVH9V6ICR2wf3Sr19f2aEltua8po2FkkAmBVsewS+cY7WaLtJq7QB7YMsH2Lv9KbV8bONQ==}
+  '@dcloudio/uni-cli-shared@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-WbWxK/Z1m9KPiP3vrp1+3T2QsrnjixeKFXN/a2DOLgesWPIz1xeAlVW86AyR2y1HUxd3HCNS9jA/dsGJJKBbfA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@dcloudio/uni-cloud@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-C0pnafIFUOtp/+DiRMUI7vZWz6UXKC3iXznBAHOTfBJ0BB+ARKn8G4vncEeq7Cz9waNZszU1iOJxqrvFNM6xOQ==}
+  '@dcloudio/uni-cloud@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-Pg8azRlBAjqJV0NDzKsR9wULBPUSylLtS64OhwQQGjW0q8GrJrL1R4jJDSKv8FsNpJ5EbtM/NxBZx3kbhIEGhg==}
 
-  '@dcloudio/uni-components@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-XNmrhhB5Vo2xQdGwrXzhoMf5SmgX848CPu15ztgcqHI2st8YdnMoy/IFvuwzWGjUwDqDGy9YX7NYFai4JsQ80A==}
+  '@dcloudio/uni-components@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-upLuCyyl6hOY2dcWVtKax9oy89fFyMLrPqxRy9eypLbjXYL8lKKXx+bw30VuNaurS+ws7p0DVTDrneMVRI3qdg==}
 
-  '@dcloudio/uni-console@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-7UNDF8Dd0q2oOMU4R+7P6y5e0AeJr6GdL0kAq/Eoes5BGVRfx1gTjezTKDXj00XCP5rf3RgnYj6RMAV3qfSSrQ==}
+  '@dcloudio/uni-console@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-IprkhZ+wg2zBZWHPgR7LNp5XA5rmbpiFyTHHxW0ffPAJHeVq9fSXCtqXQwCqzyNGyuM+SG13wFJ4xEwJZ9Vowg==}
 
-  '@dcloudio/uni-h5-vite@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-66uOoPSuV6iz5vtbUUe7o3wbGdD2gpRWZB3m4M2vz/4rbq6gxlIbKMuLtsovGvcogGgOfXd9E+VI6nANfroHbQ==}
+  '@dcloudio/uni-h5-vite@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-1A2O6NaO0WOdDNBeriXVJFKhcD5k3A94bRBbcx8+IQCkq5AvX51OK4yQA/UPjlddnVbBuHWZrrX6kF3oMSlZQw==}
 
-  '@dcloudio/uni-h5-vue@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-M5odB2dPgzQapRBaowMy4ZcHBld4xZIDnjmbWWJe1TTTkKsrZq94BMyiAOQ6iLFagyqHSJniwQmtBQtCpIh34A==}
+  '@dcloudio/uni-h5-vue@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-NHovth6NX6IspFyIFGPhLi4qVXowSvPRgCs/EzAOrxMe0AGxDMCPkQoK3T70xVd6qE+terVzBpJxQQ7+QhsKoQ==}
 
-  '@dcloudio/uni-h5@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-miHZEb02JNPc7D/m7YH6amPmzg69b6QRaMF9AbHGgwy8gcG6uB3jZ2kkRefs637uAcBnANaW610MFOtlMRcH9g==}
+  '@dcloudio/uni-h5@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-ogoMQlxipNKbKCi71IgyRMyZB7hRrZRqLNAeo3Mk5frHeOp+4Bz9JyH8CZG6OWKN3sVPshRW3mHeuiM0lozK5w==}
 
   '@dcloudio/uni-i18n@3.0.0-4020820240925001':
     resolution: {integrity: sha512-+EfuUC79QIYIbKB8cdH0IoY69DYytG9jeybIATSlMwMZjVJznA8dGfvkfgy29mBjgLYThuXyZ1dSZ33DXr9MBw==}
 
-  '@dcloudio/uni-i18n@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-CmI4N4XpiMk4FW4Jswk5qqIWmKyl4xoV4uifWVqGRilAz4zOSQ9ye57qa3lpyWbX12tUGoVhtaevNKc9pRM4YA==}
+  '@dcloudio/uni-i18n@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-dn/yPty4Z4l7qpD0SbrRZWrc974p+CY8gs/nPrybar22gH4Be1NFaYrx317ETCgjKbrJiYqt96qd2ABB0CI68g==}
 
-  '@dcloudio/uni-mp-alipay@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-PYm83wVPbXVuTYNGsmGumvYoiDhKQi9oz5N8mlZKKwpog5md9LN5j6JwTaeUNM9eUjJ2gLWB6OobCrvMWrexBA==}
+  '@dcloudio/uni-mp-alipay@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-Z7o0g5AodRLb98jcQowEJ9r4pMeD4JRigDFxHG5GkQuWVRaP1LaGN/AN6B4otsWq1hp1VHv/jW/Xt8GOJXL9jw==}
 
-  '@dcloudio/uni-mp-baidu@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-BKIQyqHtf3xT48COqiYepmP67nIKlVWIu5zhdBGcvIJJjUfkVVPGUj+BpJ1tgdOknhCb7LtKLhleedEVK4guWQ==}
+  '@dcloudio/uni-mp-baidu@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-NGaV+XtVQEiVX+67SbjQZNSjWzzkQmNm9HuPuA7eUBP5Pgh6DxPHZPy0/CdYw3jkw0fERvHWwST7fPEv9BU3pQ==}
 
-  '@dcloudio/uni-mp-compiler@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-IcEJ4r0155X3s3F9l5Y6BCZBScb6Q8DmXw0dG2IsvuWNiAn8b8/DNJxWL+jMJDMiM84FARh1h8MRxHOUWq/3fg==}
+  '@dcloudio/uni-mp-compiler@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-nEQhwC0dAi85XotdB085jmwl5JVraR48vIMOienuicpW3ZrMbKvc2NDRaxjSQ4nfNKyX6wTtGmRZYNHGGbT8tg==}
 
-  '@dcloudio/uni-mp-harmony@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-8KBzWHsf+t6GJG7XOfHCLfQez8ut1W+EDy3PCVnVPq4vObNjyZi/9nAFueJnhrd2QGPAnVMZyqzmBdOoRuz6og==}
+  '@dcloudio/uni-mp-harmony@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-GYoyWL9PLDO3AC7Xs6NMEfiiAZymWK+RH7eIU7MgnSBGCRo4V1/3C6dT+aAKLEYS21AZPkkx4NgEqmuRVWx39w==}
 
-  '@dcloudio/uni-mp-jd@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-+VyXDHEC5ijDyITbCu//zanPmnnHblZFPV7qV89YGea872nqXQBMYiYZ7E/dFxjYwQ/5AZYfO7zSho7pGmgl1Q==}
+  '@dcloudio/uni-mp-jd@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-WBJ7grTDuPcdNm/M6tpqfQFc89pWXv9ebSSqGyOVetSxS/2zWpAdotQV1em4EwvU2uZx3DBONL/7Mt8TocW1zg==}
 
-  '@dcloudio/uni-mp-kuaishou@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-wkyOs8IeNVUmYcgrC7AhPMbpeqIDSovMDAVdYTlRuBghjhmzfrvgX67nUHQjKe2tK298XT47ccfyvMzOTh7/dw==}
+  '@dcloudio/uni-mp-kuaishou@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-BgygbP2XLVz6wAqg11sgFTB+AZIjB5ekZzgiUypaD/MXMWNuIna6fOV74JZZ41GH0YG0quuYBFOlBoKunlP8ow==}
 
-  '@dcloudio/uni-mp-lark@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-rvzHmCvqL0dr0Svys5ZLykeakULQQS8PKRxWhotRgJwrfu8DVPXUVJnZ0hO96Gf9uavjiiRETuxq6q/8YbWP/Q==}
+  '@dcloudio/uni-mp-lark@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-IQLeRNJB1F6cWXJX0MlUaqnY2MIHw2mRI6Ll0feam5FJh8g4wPvNSkVggHJ//KfbmIcrpNSHJvp2iOmE9V0s/g==}
 
-  '@dcloudio/uni-mp-qq@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-kG6QSBig7QUvG4ba0GiDN6rFBf8aS1z3EO5pvuCRT3FHb2qavo69Gx7+AuwwgYzFQTxGQ3rqrjXWKUM0OyP1EQ==}
+  '@dcloudio/uni-mp-qq@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-AWyzQH9T0tUqFs2pQsXZ39u/pvWYA5xjywbpwN9PUchvxkwFGAL+uR/e5YdNJUz90qJAI3U5KE9zEkGHXd6xLw==}
 
-  '@dcloudio/uni-mp-toutiao@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-SJazc0jSBTz/SLH8se3k1SWS/qjzCC8B33AnU/Q45P0KH+oRP/7PcQaBJ2cH1QF0mT87RNnCznU7MdQllnZw4Q==}
+  '@dcloudio/uni-mp-toutiao@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-wO+d3X6x6FgMA3QS9sCKx58TZHc8SSNIgBBDTzZDqkvfSTgQQ4gZgOybl6VGVLF8L6QrXNQYc80jmtX3fmlBIQ==}
 
-  '@dcloudio/uni-mp-vite@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-JzGd+A/uADrWJ65zLhPX791vqpedm8s+N2Q/DURgAHgGiXhgXqekXREfeBGlyCxH94bICDYuBK42F+vxWewVoQ==}
+  '@dcloudio/uni-mp-vite@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-6PolNwaN20vY96LxJDX+WyQ9q+LurwKV1CGKOj6J7lmqzXIGj39LbNiCVv+rcG0RcUrQy/uxJBN1tk8zm2BTlw==}
 
-  '@dcloudio/uni-mp-vue@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-ZbUmtRw6jCiyJud14fcEJjiOJeXVdLVMYKVM/4wvG5BxR26MsK82KdJLbeFntlL0pHSAgP6kbCfkuu24EKMsYA==}
+  '@dcloudio/uni-mp-vue@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-sUAE11jNb5in6fq/TVmK6AyMmlJXWylUYUXT5iYC3+VkmhogsiO2ZhcEU3zlMIuSyBV19XPYWQFPl3iGcIhXng==}
 
-  '@dcloudio/uni-mp-weixin@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-yAOhGduvO7I7wgiepBLAStT0FJnsgMYIWHJ2Pw1ksk/ugXZZgYCefo5x6jxI7epKCDM/Jc8tcaG/E8dTGDr6mg==}
+  '@dcloudio/uni-mp-weixin@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-IgNWbP8Anoepw/IxcRx/66b6doDFNltrrH2I0xXt4DmTBbhn73EGtwYUhKWnZKos8LMnXisOkbvLTRpHrd486A==}
 
-  '@dcloudio/uni-mp-xhs@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-ujavUdhYw+lyEynKH+KqVuSvqO2DIsAcJmE0WMAV0UnvwFp4Dr0oasUVFEmGQyh601CKDOSMeCCX+iBSkuQZxA==}
+  '@dcloudio/uni-mp-xhs@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-xK7PIO81SAEUuW/jnPxkewdxdtCWRA9FMgQsEtt81q7bkIrDWihoZsX2OJx9RhrX6tuLNncF5PVQQ5xA8qpdGw==}
 
-  '@dcloudio/uni-nvue-styler@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-4LF3dZDVoRNDP/wfAFkpYyZUZ01zcH0Y7DrllBToBZeuTqjGyhcwYNrxh4deCWd+XwQc4vyVV5+Dpd1NP/IkbA==}
+  '@dcloudio/uni-nvue-styler@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-+opq8dixI+INECmn8IwXtLy5hkU6Fks5SxV2k9HCSkn1IPWvhCMl2K52bVtSgOuqO2VQ3N67cPkNk1tuYmRmNw==}
 
-  '@dcloudio/uni-push@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-NwsNNCgrSxJpiV/vhppftam1w7J2ZXOTtEbOVpNYZfJHnavq6dMjNc/eF106lZMGo+aLKDda1vydjLV43A7LDg==}
+  '@dcloudio/uni-push@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-f9XFipa0olZLAEwnfC14Uic0JqzqLND4HW309bVTw+ly+fVqtTNffmNpz5c7X5hXY5XJJcPADYehAVuwdWlOIA==}
 
-  '@dcloudio/uni-quickapp-webview@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-LZGZgJX/UspZWOw1FF+SIWtdgNEehbQtjWbxVx+25MXODzrF3pgQhMGVz4g5QGOnblqclj1P3COjkYVOhXO5SQ==}
+  '@dcloudio/uni-quickapp-webview@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-70Vw5JlwlwMeazi/Fcit+kL+PYodfQxp6iVeqGre6i9dw3ozOsNhix/5YGWsWlCiRY6r9D2RvcBrljX4pOCapA==}
 
   '@dcloudio/uni-shared@3.0.0-4020820240925001':
     resolution: {integrity: sha512-CSzMyxotDk/O8Yc2h1B0Bfm/wiDumexLNRJ0EJxXBX2eCyHpLl9SMrYIDqC0Y7aSHNPYA2UKfoaAujTMGqFmtg==}
 
-  '@dcloudio/uni-shared@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-AshaaAW8azbFfDoinWHIYvUjLUDybtRxYteF0PQPfB0dG2rUe4Jwpb5xx/1noORFDOfkrP1doaNqEXOFsya1ag==}
+  '@dcloudio/uni-shared@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-JAlnBOoy3VMgQF67aD2jt1hB0xSpgSrGlT1oTuyK5SZnQbkZK9IPjZUznh4s0q4grv6CeCFQwjuYlTleFampcw==}
 
-  '@dcloudio/uni-stacktracey@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-RZzuCr2mpkuJ/HN18UdpyL4NmEYKfuSKgAleao8w063hZCYOmSDFppWyfvBXM0kL7u2YlbUPIEp74C9fFepLOw==}
+  '@dcloudio/uni-stacktracey@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-8Op7jXPsTvCJIPb/odunaCPNi68WXXENTOdbH8I0e0V7VYqb54np1i62S2OjESTMkd2yJPXmWZVX3VKXDgi5+Q==}
 
-  '@dcloudio/uni-stat@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-7Hojzi8r7t6sorao3Nmhf2xADc8p8YuNyYDpOXoPW/spe3DiFf1V8Le5EtVUbrfXIo3QtpGJuA7fvZ7GQMiNIg==}
+  '@dcloudio/uni-stat@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-TgxYyWSkUWhELULMaum5la0xTBizRZ2M6cPyrmwk6Re4rrFn5UTC0Yb+j2lBu740UQBVYXfAf+yRuMTIQeWDcA==}
 
-  '@dcloudio/vite-plugin-uni@3.0.0-alpha-4050720250320001':
-    resolution: {integrity: sha512-E2mzVSXG4Zd1pb5fMUUuRN+gYmLA4JjdzWo95BVf0COhNu1cv0XGPjL6oBaTddACFkVwcIfV9+toJbNrkpYUyA==}
+  '@dcloudio/vite-plugin-uni@3.0.0-alpha-4060120250403001':
+    resolution: {integrity: sha512-FfOYIYYH22abSLeF2G4xEXnak2ulz2k3NPIJUEq+CYOHy0RFphEiilKAutAWgsmthQM5UO4ZffOJTJ8VR8PWyw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -1744,8 +1744,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/lucide@1.2.32':
-    resolution: {integrity: sha512-M5efeHQJhlT8FkAXjW+xGu5/lHUt5VBSjd/u9XxmQy6RGXLRCRi0PcUBosAuKALRT15j+U8dN4eWiDhDZjTbSw==}
+  '@iconify-json/lucide@1.2.34':
+    resolution: {integrity: sha512-6xiITvlYP/5d6KQPRBHDQ+eaLxRWiTvXfuVGuNX2ahNLbEi0VKB04v008IQLPrMu/C4tRMI4+sRzHd/wSFxGZQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6036,6 +6036,10 @@ packages:
   unimport@3.14.5:
     resolution: {integrity: sha512-tn890SwFFZxqaJSKQPPd+yygfKSATbM8BZWW1aCR2TJBTs1SDrmLamBueaFtYsGjHtQaRgqEbQflOjN2iW12gA==}
 
+  unimport@4.1.1:
+    resolution: {integrity: sha512-j9+fijH6aDd05yv1fXlyt7HSxtOWtGtrZeYTVBsSUg57Iuf+Ps2itIZjeyu7bEQ4k0WOgYhHrdW8m/pJgOpl5g==}
+    engines: {node: '>=18.12.0'}
+
   unimport@4.1.2:
     resolution: {integrity: sha512-oVUL7PSlyVV3QRhsdcyYEMaDX8HJyS/CnUonEJTYA3//bWO+o/4gG8F7auGWWWkrrxBQBYOO8DKe+C53ktpRXw==}
     engines: {node: '>=18.12.0'}
@@ -6094,8 +6098,8 @@ packages:
       '@vueuse/core':
         optional: true
 
-  unplugin-auto-import@0.18.6:
-    resolution: {integrity: sha512-LMFzX5DtkTj/3wZuyG5bgKBoJ7WSgzqSGJ8ppDRdlvPh45mx6t6w3OcbExQi53n3xF5MYkNGPNR/HYOL95KL2A==}
+  unplugin-auto-import@19.1.0:
+    resolution: {integrity: sha512-B+TGBEBHqY9aR+7YfShfLujETOHstzpV+yaqgy5PkfV0QG7Py+TYMX7vJ9W4SrysHR+UzR+gzcx/nuZjmPeclA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
@@ -7399,10 +7403,10 @@ snapshots:
 
   '@dcloudio/types@3.4.14': {}
 
-  '@dcloudio/uni-app-harmony@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-app-harmony@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-app-uts': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-app-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-app-uts': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-app-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       debug: 4.4.0
       fs-extra: 10.1.0
       licia: 1.46.0
@@ -7417,11 +7421,11 @@ snapshots:
       - vite
       - vue
 
-  '@dcloudio/uni-app-plus@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-app-plus@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-app-uts': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-app-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-app-vue': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-app-uts': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-app-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-app-vue': 3.0.0-alpha-4060120250403001
       debug: 4.4.0
       fs-extra: 10.1.0
       licia: 1.46.0
@@ -7436,15 +7440,15 @@ snapshots:
       - vite
       - vue
 
-  '@dcloudio/uni-app-uts@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-app-uts@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@babel/parser': 7.26.9
       '@babel/types': 7.26.9
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-console': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-nvue-styler': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-console': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-nvue-styler': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
       '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
@@ -7460,7 +7464,7 @@ snapshots:
       magic-string: 0.30.17
       picocolors: 1.1.1
       source-map-js: 1.2.1
-      unimport: 3.14.5(rollup@4.34.6)
+      unimport: 4.1.1
     transitivePeerDependencies:
       - '@nuxt/kit'
       - '@vueuse/core'
@@ -7470,12 +7474,12 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-app-vite@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-app-vite@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-nvue-styler': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-nvue-styler': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
       '@vitejs/plugin-vue': 5.1.0(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@vue/compiler-dom': 3.4.21
@@ -7493,18 +7497,18 @@ snapshots:
       - vite
       - vue
 
-  '@dcloudio/uni-app-vue@3.0.0-alpha-4050720250320001': {}
+  '@dcloudio/uni-app-vue@3.0.0-alpha-4060120250403001': {}
 
-  '@dcloudio/uni-app@3.0.0-alpha-4050720250320001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-app@3.0.0-alpha-4060120250403001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@dcloudio/types': 3.4.14
-      '@dcloudio/uni-cloud': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-components': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-console': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-push': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-stat': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-cloud': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-components': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-console': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-push': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-stat': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -7515,9 +7519,9 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-automator@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-automator@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       address: 1.2.2
       cross-env: 7.0.3
       debug: 4.4.0
@@ -7600,15 +7604,15 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-cli-shared@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-cli-shared@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.26.9
       '@babel/parser': 7.26.9
       '@babel/types': 7.26.9
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@intlify/core-base': 9.1.9
       '@intlify/shared': 9.1.9
       '@intlify/vue-devtools': 9.1.9
@@ -7647,7 +7651,8 @@ snapshots:
       resolve: 1.22.8
       source-map-js: 1.2.1
       tapable: 2.2.1
-      unplugin-auto-import: 0.18.6(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(rollup@4.34.6)
+      unimport: 4.1.1
+      unplugin-auto-import: 19.1.0(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))
       xregexp: 3.1.0
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -7658,11 +7663,11 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-cloud@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-cloud@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
       fast-glob: 3.3.3
     transitivePeerDependencies:
@@ -7674,11 +7679,11 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-components@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-components@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cloud': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-h5': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cloud': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-h5': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
     transitivePeerDependencies:
       - '@nuxt/kit'
       - '@vueuse/core'
@@ -7688,9 +7693,9 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-console@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-console@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
       fs-extra: 10.1.0
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -7701,10 +7706,10 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-h5-vite@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-h5-vite@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
       '@vue/compiler-dom': 3.4.21
       '@vue/compiler-sfc': 3.4.21
@@ -7723,19 +7728,19 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-h5-vue@3.0.0-alpha-4050720250320001(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-h5-vue@3.0.0-alpha-4060120250403001(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/server-renderer': 3.4.21(vue@3.5.13(typescript@5.8.3))
     transitivePeerDependencies:
       - vue
 
-  '@dcloudio/uni-h5@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-h5@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-h5-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-h5-vue': 3.0.0-alpha-4050720250320001(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-h5-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-h5-vue': 3.0.0-alpha-4060120250403001(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/server-renderer': 3.4.21(vue@3.5.13(typescript@5.8.3))
       '@vue/shared': 3.4.21
       debug: 4.4.0
@@ -7755,14 +7760,14 @@ snapshots:
 
   '@dcloudio/uni-i18n@3.0.0-4020820240925001': {}
 
-  '@dcloudio/uni-i18n@3.0.0-alpha-4050720250320001': {}
+  '@dcloudio/uni-i18n@3.0.0-alpha-4060120250403001': {}
 
-  '@dcloudio/uni-mp-alipay@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-alipay@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
@@ -7774,15 +7779,15 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-baidu@3.0.0-alpha-4050720250320001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-baidu@3.0.0-alpha-4060120250403001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-app': 3.0.0-alpha-4050720250320001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-mp-weixin': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-app': 3.0.0-alpha-4060120250403001(@dcloudio/types@3.4.14)(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-mp-weixin': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/shared': 3.4.21
       jimp: 0.10.3
@@ -7803,13 +7808,13 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@dcloudio/uni-mp-compiler@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-compiler@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@babel/generator': 7.26.9
       '@babel/parser': 7.26.9
       '@babel/types': 7.26.9
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/compiler-dom': 3.4.21
       '@vue/shared': 3.4.21
@@ -7823,14 +7828,14 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-harmony@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-harmony@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -7841,13 +7846,13 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-jd@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-jd@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -7858,14 +7863,14 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-kuaishou@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-kuaishou@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-mp-weixin': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-mp-weixin': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
@@ -7880,14 +7885,14 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@dcloudio/uni-mp-lark@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-lark@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
@@ -7899,12 +7904,12 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-qq@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-qq@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
       fs-extra: 10.1.0
     transitivePeerDependencies:
@@ -7916,13 +7921,13 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-toutiao@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-toutiao@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-core': 3.4.21
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
@@ -7934,13 +7939,13 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-vite@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-vite@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-i18n': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-i18n': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/compiler-dom': 3.4.21
       '@vue/compiler-sfc': 3.4.21
       '@vue/shared': 3.4.21
@@ -7954,17 +7959,17 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-vue@3.0.0-alpha-4050720250320001':
+  '@dcloudio/uni-mp-vue@3.0.0-alpha-4060120250403001':
     dependencies:
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
 
-  '@dcloudio/uni-mp-weixin@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-weixin@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
       jimp: 0.10.3
       licia: 1.46.0
@@ -7983,13 +7988,13 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@dcloudio/uni-mp-xhs@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-mp-xhs@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8000,14 +8005,14 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-nvue-styler@3.0.0-alpha-4050720250320001':
+  '@dcloudio/uni-nvue-styler@3.0.0-alpha-4060120250403001':
     dependencies:
       parse-css-font: 4.0.0
       postcss: 8.5.3
 
-  '@dcloudio/uni-push@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-push@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
     transitivePeerDependencies:
       - '@nuxt/kit'
       - '@vueuse/core'
@@ -8017,12 +8022,12 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-quickapp-webview@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-quickapp-webview@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4050720250320001
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-4060120250403001
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@vue/shared': 3.4.21
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8037,16 +8042,16 @@ snapshots:
     dependencies:
       '@vue/shared': 3.4.21
 
-  '@dcloudio/uni-shared@3.0.0-alpha-4050720250320001':
+  '@dcloudio/uni-shared@3.0.0-alpha-4060120250403001':
     dependencies:
       '@vue/shared': 3.4.21
 
-  '@dcloudio/uni-stacktracey@3.0.0-alpha-4050720250320001': {}
+  '@dcloudio/uni-stacktracey@3.0.0-alpha-4060120250403001': {}
 
-  '@dcloudio/uni-stat@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/uni-stat@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       debug: 4.4.0
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8057,13 +8062,13 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/vite-plugin-uni@3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
+  '@dcloudio/vite-plugin-uni@3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.26.9)
       '@babel/plugin-transform-typescript': 7.25.9(@babel/core@7.26.9)
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050720250320001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
-      '@dcloudio/uni-shared': 3.0.0-alpha-4050720250320001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4060120250403001(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.34.6)(vue@3.5.13(typescript@5.8.3))
+      '@dcloudio/uni-shared': 3.0.0-alpha-4060120250403001
       '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
       '@vitejs/plugin-legacy': 5.3.2(terser@5.39.0)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))
       '@vitejs/plugin-vue': 5.1.0(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
@@ -8083,7 +8088,7 @@ snapshots:
       magic-string: 0.30.17
       picocolors: 1.1.1
       terser: 5.39.0
-      unplugin-auto-import: 0.18.6(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(rollup@4.34.6)
+      unplugin-auto-import: 19.1.0(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))
       vite: 6.2.5(@types/node@22.14.0)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8505,7 +8510,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify-json/lucide@1.2.32':
+  '@iconify-json/lucide@1.2.34':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -13713,7 +13718,7 @@ snapshots:
   unimport@3.14.5(rollup@4.34.6):
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
-      acorn: 8.14.0
+      acorn: 8.14.1
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
       fast-glob: 3.3.3
@@ -13728,6 +13733,23 @@ snapshots:
       unplugin: 1.16.0
     transitivePeerDependencies:
       - rollup
+
+  unimport@4.1.1:
+    dependencies:
+      acorn: 8.14.1
+      escape-string-regexp: 5.0.0
+      estree-walker: 3.0.3
+      fast-glob: 3.3.3
+      local-pkg: 1.1.1
+      magic-string: 0.30.17
+      mlly: 1.7.4
+      pathe: 2.0.3
+      picomatch: 4.0.2
+      pkg-types: 1.3.1
+      scule: 1.3.0
+      strip-literal: 3.0.0
+      unplugin: 2.2.2
+      unplugin-utils: 0.2.4
 
   unimport@4.1.2:
     dependencies:
@@ -13832,20 +13854,16 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  unplugin-auto-import@0.18.6(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3)))(rollup@4.34.6):
+  unplugin-auto-import@19.1.0(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3))):
     dependencies:
-      '@antfu/utils': 0.7.10
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
-      fast-glob: 3.3.3
-      local-pkg: 0.5.1
+      local-pkg: 1.1.1
       magic-string: 0.30.17
-      minimatch: 9.0.5
-      unimport: 3.14.5(rollup@4.34.6)
-      unplugin: 1.16.0
+      picomatch: 4.0.2
+      unimport: 4.1.2
+      unplugin: 2.2.2
+      unplugin-utils: 0.2.4
     optionalDependencies:
       '@vueuse/core': 13.0.0(vue@3.5.13(typescript@5.8.3))
-    transitivePeerDependencies:
-      - rollup
 
   unplugin-auto-import@19.1.2(@vueuse/core@13.0.0(vue@3.5.13(typescript@5.8.3))):
     dependencies:
