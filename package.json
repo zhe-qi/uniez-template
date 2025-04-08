@@ -87,7 +87,7 @@
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-4060120250403001",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4060120250403001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4060120250403001",
-    "@iconify-json/lucide": "^1.2.34",
+    "@iconify-json/lucide": "^1.2.35",
     "@rollup/pluginutils": "^5.1.4",
     "@types/crypto-js": "^4.2.2",
     "@types/node": "^22.14.0",
