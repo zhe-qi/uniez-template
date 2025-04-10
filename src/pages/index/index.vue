@@ -2,7 +2,8 @@
 {
   "name": "Index",
   "style": {
-    "navigationBarTitleText": "首页"
+    "navigationBarTitleText": "首页",
+    "navigationStyle": "custom"
   },
   "meta": {
     "ignoreAuth": true
@@ -11,6 +12,7 @@
 </route>
 
 <script setup lang="ts">
+import NavBar from '@/components/nav-bar/nav-bar.vue';
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 
 const router = useRouter();
@@ -68,17 +70,22 @@ onMounted(() => {
 </script>
 
 <template>
-  <view class="flex-center flex-col">
-    <image class="logo" src="/static/logo.png" />
-    <!-- 测试模板全局方法，鼠标移入可以显示其类型 -->
-    {{ $formatDate(new Date().getTime()) }}
+  <view class="w-full">
+    <NavBar left-text="" :left-arrow="false">
+      首页
+    </NavBar>
+    <view class="flex flex-center flex-col">
+      <wd-img class="logo" src="/static/logo.png" />
+      <!-- 测试模板全局方法，鼠标移入可以显示其类型 -->
+      {{ $formatDate(new Date().getTime()) }}
+    </view>
     <view class="flex justify-center">
       <text class="title mt-4 text-primary font-500">
         {{ title }}
       </text>
     </view>
 
-    <view class="mt-8 flex flex-col gap-4">
+    <view class="mt-8 flex flex-col gap-4 px-4">
       <wd-button @click="toListPage">
         跳转分包页面
       </wd-button>

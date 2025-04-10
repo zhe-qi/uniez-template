@@ -30,7 +30,12 @@ onLaunch(async () => {
 });
 </script>
 
-<style lang="scss">
+<style lang="postcss">
+page {
+  /** 这里设置所有页面背景色 */
+  background-color: #f5f5f5;
+}
+
 /** 给内置 button 上色 */
 button[type='primary'] {
   background-color: var(--primary);

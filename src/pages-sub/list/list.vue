@@ -13,6 +13,7 @@
 
 <script lang="ts" setup>
 import type { SwiperOnAnimationfinishEvent, SwiperOnTransitionEvent } from '@uni-helper/uni-app-types';
+import NavBar from '@/components/nav-bar/nav-bar.vue';
 import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
 
 const appStore = useAppStore();
@@ -106,10 +107,9 @@ function handleClickLeft() {
   <view class="h-full">
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
-        <wd-navbar
-          title="列表" left-text="返回" safe-area-inset-top left-arrow placeholder :fixed="true"
-          @click-left="handleClickLeft"
-        />
+        <NavBar left-text="返回" safe-area-inset-top placeholder left-arrow :fixed="true" @click-left="handleClickLeft">
+          列表
+        </NavBar>
       </template>
       <view class="h-250 flex-center bg-[var(--wot-color-theme)] text-white">
         <view class="flex flex-col">

@@ -24,7 +24,7 @@ export const useAppStore = defineStore('AppStore', () => {
 
   const themeVars = ref<ConfigProviderThemeVars>({ colorTheme: '#0957DE' });
 
-  const theme = ref<ThemeModeEnum>(ThemeModeEnum.LIGHT);
+  const theme = ref<GetEnumType<typeof ThemeModeEnum>>(ThemeModeEnum.LIGHT);
 
   /** 初始化全局异步等待 */
   const initGlobalAsync = async () => {

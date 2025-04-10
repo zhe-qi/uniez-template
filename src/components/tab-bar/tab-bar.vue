@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const props = withDefaults(
   defineProps<{
-    index: number;
+    index?: number;
     placeholder?: boolean;
   }>(),
   {

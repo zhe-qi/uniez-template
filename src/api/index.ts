@@ -2,12 +2,8 @@ import { ContentTypeEnum, ResultEnum } from '@/enums/httpEnum';
 import { getCache } from '@/utils';
 import AdapterUniapp from '@alova/adapter-uniapp';
 import { createAlova } from 'alova';
+import { isEqual } from 'radashi';
 import { createApis, withConfigType } from './createApis';
-
-const ContentType = {
-  'Content-Type': ContentTypeEnum.JSON,
-  'Accept': 'application/json, text/plain, */*',
-};
 
 /**
  * 自动生成请使用 alova.config.ts 文件 执行 npx alova gen -f 命令
@@ -25,11 +21,11 @@ export const alovaInstance = createAlova({
   timeout: 30000,
   cacheFor: null,
   beforeRequest: (method) => {
-    method.config.headers = {
-      Authorization: `Bearer ${getCache('token')}`,
-      ...ContentType,
-      ...method.config.headers,
-    };
+    Object.assign(method.config.headers, {
+      'Content-Type': ContentTypeEnum.JSON,
+      'Accept': 'application/json, text/plain, */*',
+      'Authorization': `Bearer ${getCache('token')}`,
+    });
   },
   responded: {
     /**
@@ -39,8 +35,7 @@ export const alovaInstance = createAlova({
      * @param method
      */
     onSuccess: async (response, method) => {
-      const { config } = method;
-      const { requestType } = config;
+      const { requestType } = method.config;
       const {
         statusCode,
         data: rawData,
@@ -48,14 +43,13 @@ export const alovaInstance = createAlova({
       } = response as UniNamespace.RequestSuccessCallbackResult;
 
       /** TODO: 根据项目后端结构来，状态码 和 错误信息 */
-      if (statusCode === ResultEnum.SUCCESS) {
+      if (isEqual(statusCode, ResultEnum.SUCCESS)) {
         if (requestType) { return response; }
 
         const { statusCode: code, errors } = rawData as ParamsType;
-        if (code === ResultEnum.SUCCESS) { return rawData; }
+        if (isEqual(code, ResultEnum.SUCCESS)) { return rawData; }
 
-        // @ts-expect-error ignore
-        !config.ignoreError
+        !method.config.ignoreError
         && uni.showToast({
           title: JSON.stringify(errors),
           icon: 'none',

@@ -5,7 +5,8 @@
       "type": "home",
       "name": "Index",
       "style": {
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
@@ -28,7 +29,8 @@
       "type": "page",
       "name": "TestPage",
       "style": {
-        "navigationBarTitleText": "测试页面"
+        "navigationBarTitleText": "测试页面",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
@@ -39,7 +41,8 @@
       "type": "page",
       "name": "Theme",
       "style": {
-        "navigationBarTitleText": "动态主题"
+        "navigationBarTitleText": "动态主题",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true

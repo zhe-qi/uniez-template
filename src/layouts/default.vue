@@ -8,5 +8,6 @@ const { theme, themeVars } = storeToRefs(appStore);
 <template>
   <wd-config-provider :theme="theme" :theme-vars="themeVars">
     <slot />
+    <wd-toast />
   </wd-config-provider>
 </template>

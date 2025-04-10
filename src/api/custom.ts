@@ -41,7 +41,6 @@ type ApiAppSysAuthUserinfoGetResponse = {
 export function apiAppSysAuthUserinfoGet(data: ApiAppSysAuthUserinfoGet): PromiseLike<ApiAppSysAuthUserinfoGetResponse> {
   return alovaInstance.Get('/api/userinfo', {
     params: data,
-    // @ts-expect-error 忽略全局异常错误弹窗
     ignoreError: true,
   });
 }

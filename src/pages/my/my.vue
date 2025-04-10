@@ -12,12 +12,15 @@
 </route>
 
 <script lang="ts" setup>
+import NavBar from '@/components/nav-bar/nav-bar.vue';
 import TabBar from '@/components/tab-bar/tab-bar.vue';
 </script>
 
 <template>
   <view class="">
-    <wd-navbar title="我的" safe-area-inset-top placeholder :fixed="true" />
+    <NavBar left-text="" :left-arrow="false" safe-area-inset-top placeholder :fixed="true">
+      我的
+    </NavBar>
     <view class="p-4">
       我的页面
     </view>

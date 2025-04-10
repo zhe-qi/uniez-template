@@ -1,4 +1,4 @@
-import type { PromiseReject, PromiseResolve, PromiseWithResolvers } from './types';
+import { withResolvers } from 'radashi';
 
 export const prototypeInterceptor = {
   install() {
@@ -14,15 +14,7 @@ export const prototypeInterceptor = {
 
     // 添加 Promise.withResolvers polyfill
     if (typeof Promise.withResolvers !== 'function') {
-      Promise.withResolvers = function<T>(): PromiseWithResolvers<T> {
-        let resolve!: PromiseResolve<T>;
-        let reject!: PromiseReject;
-        const promise = new Promise<T>((res, rej) => {
-          resolve = res;
-          reject = rej;
-        });
-        return { promise, resolve, reject };
-      };
+      Promise.withResolvers = withResolvers;
     }
   },
 };

@@ -7,5 +7,7 @@ declare global {
     [key: string]: any;
   }
 
+  type GetEnumType<T> = T[keyof T];
+
   const ROUTES: [];
 }
