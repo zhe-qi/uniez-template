@@ -86,5 +86,5 @@ export default defineManifestConfig({
   'uniStatistics': {
     enable: false,
   },
-  'vueVersion': 3,
+  'vueVersion': '3',
 });
