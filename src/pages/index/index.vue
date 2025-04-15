@@ -74,10 +74,12 @@ onMounted(() => {
     <NavBar left-text="" :left-arrow="false">
       首页
     </NavBar>
-    <view class="flex flex-center flex-col">
-      <wd-img class="logo" src="/static/logo.png" />
+    <view class="mt-12 flex flex-center flex-col">
+      <wd-img class="logo" src="/static/logo.png" width="200rpx" height="200rpx" />
       <!-- 测试模板全局方法，鼠标移入可以显示其类型 -->
-      {{ $formatDate(new Date().getTime()) }}
+      <text class="mt-4">
+        {{ $formatDate(new Date().getTime()) }}
+      </text>
     </view>
     <view class="flex justify-center">
       <text class="title mt-4 text-primary font-500">

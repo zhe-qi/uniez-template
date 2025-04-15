@@ -2,7 +2,7 @@
   "name": "uni-preset-vue",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.8.1",
   "description": "uniez-template",
   "license": "MIT",
   "scripts": {
