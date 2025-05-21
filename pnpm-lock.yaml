@@ -151,8 +151,8 @@ importers:
         specifier: ^0.2.28
         version: 0.2.28(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))
       '@uni-ku/bundle-optimizer':
-        specifier: ^1.3.2
-        version: 1.3.2(@vueuse/core@13.1.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
+        specifier: ^1.3.3
+        version: 1.3.3(@vueuse/core@13.1.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@unocss/eslint-plugin':
         specifier: ^0.65.1
         version: 0.65.4(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
@@ -325,10 +325,6 @@ packages:
     resolution: {integrity: sha512-vMqyb7XCDMPvJFFOaT9kxtiRh42GwlZEg1/uIgtZshS5a/8OaduUfCi7kynKgc3Tw/6Uo2D+db9qBttghhmxwQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/core@7.26.9':
-    resolution: {integrity: sha512-lWBYIrF7qK5+GjY5Uy+/hEgp8OJWOD/rpy74GplYRhEauvbHDeFB8t5hPOZxCZ0Oxf4Cc36tK51/l3ymJysrKw==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/generator@7.26.2':
     resolution: {integrity: sha512-zevQbhbau95nkoxSq3f/DC/SC+EEOUZd3DYqfSkMhY2/wfSeaHV1Ew4vk8e+x8lja31IbyuUa2uQ3JONqKbysw==}
     engines: {node: '>=6.9.0'}
@@ -422,10 +418,6 @@ packages:
 
   '@babel/helper-wrap-function@7.25.9':
     resolution: {integrity: sha512-ETzz9UTjQSTmw39GboatdymDq4XIQbR8ySgVrylRhPOFpsd+JrKHIuF0de7GCWmem+T4uC5z7EZguod7Wj4A4g==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helpers@7.26.9':
-    resolution: {integrity: sha512-Mz/4+y8udxBKdmzt/UjPACs4G3j5SshJJEFFKxlCGPydG4JAHXxjWjAwjd09tf6oINvl1VfMJo+nB7H2YKQ0dA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helpers@7.27.0':
@@ -1088,9 +1080,6 @@ packages:
 
   '@dprint/toml@0.6.4':
     resolution: {integrity: sha512-bZXIUjxr0LIuHWshZr/5mtUkOrnh0NKVZEF6ACojW5z7zkJu7s9sV2mMXm8XQDqN4cJzdHYUYzUyEGdfciaLJA==}
-
-  '@emnapi/core@1.3.1':
-    resolution: {integrity: sha512-pVGjBIt1Y6gg3EJN8jTcfpP/+uuRksIo055oE/OBkDNcjZqVbfkWCksG1Jp4yZnj3iKWyWX8fdG/j6UDYPbFog==}
 
   '@emnapi/core@1.4.0':
     resolution: {integrity: sha512-H+N/FqT07NmLmt6OFFtDfwe8PNygprzBikrEMyQfgqSmT0vzE515Pz7R8izwB9q/zsH/MA64AKoul3sA6/CzVg==}
@@ -2213,9 +2202,6 @@ packages:
   '@meoc/utils@0.2.8':
     resolution: {integrity: sha512-SogV9QQpK05CVO3Gz071fRFH/PbbXxCP566VYOs/ux62RTuTbfAVeT8jkiYfzBpg+ImqpKkkK6o6tcbGM0rESQ==}
 
-  '@napi-rs/wasm-runtime@0.2.7':
-    resolution: {integrity: sha512-5yximcFK5FNompXfJFoWanu5l8v1hNGqNHh9du1xETp9HWk/B/PzvchX55WYOPaIeNglG8++68AAiauBAtbnzw==}
-
   '@napi-rs/wasm-runtime@0.2.8':
     resolution: {integrity: sha512-OBlgKdX7gin7OIq4fadsjpg+cp2ZphvAIKucHsNfTdJiqdOmOEwQd/bHi0VwNrcw5xpBJyUw6cK/QilCqy1BSg==}
 
@@ -2645,8 +2631,8 @@ packages:
     peerDependencies:
       vite: ^5.0.0
 
-  '@uni-ku/bundle-optimizer@1.3.2':
-    resolution: {integrity: sha512-qtl7Nrz333jlQ+YDn/st/lGRHQdckQdE7Y2/kWUY5TasoMfewA+Wx2YbItQoZVHUTqOgR0hOJwhdQgF52o1A3g==}
+  '@uni-ku/bundle-optimizer@1.3.3':
+    resolution: {integrity: sha512-/E7bxVH3Iu/ul8GOxNW18mvQ9ccuQ/HotfoXkHfNZhP346o6cHIn4lbrGTDw10sOfg47KR9zks6hjf5R6lywpw==}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
 
@@ -6759,26 +6745,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/core@7.26.9':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@babel/code-frame': 7.26.2
-      '@babel/generator': 7.26.9
-      '@babel/helper-compilation-targets': 7.26.5
-      '@babel/helper-module-transforms': 7.26.0(@babel/core@7.26.9)
-      '@babel/helpers': 7.26.9
-      '@babel/parser': 7.27.0
-      '@babel/template': 7.26.9
-      '@babel/traverse': 7.26.9
-      '@babel/types': 7.27.0
-      convert-source-map: 2.0.0
-      debug: 4.4.0
-      gensync: 1.0.0-beta.2
-      json5: 2.2.3
-      semver: 6.3.1
-    transitivePeerDependencies:
-      - supports-color
-
   '@babel/generator@7.26.2':
     dependencies:
       '@babel/parser': 7.27.0
@@ -6869,15 +6835,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.26.0(@babel/core@7.26.9)':
-    dependencies:
-      '@babel/core': 7.26.9
-      '@babel/helper-module-imports': 7.25.9
-      '@babel/helper-validator-identifier': 7.25.9
-      '@babel/traverse': 7.25.9
-    transitivePeerDependencies:
-      - supports-color
-
   '@babel/helper-optimise-call-expression@7.25.9':
     dependencies:
       '@babel/types': 7.26.9
@@ -6924,11 +6881,6 @@ snapshots:
       '@babel/types': 7.26.9
     transitivePeerDependencies:
       - supports-color
-
-  '@babel/helpers@7.26.9':
-    dependencies:
-      '@babel/template': 7.26.9
-      '@babel/types': 7.27.0
 
   '@babel/helpers@7.27.0':
     dependencies:
@@ -7729,9 +7681,9 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.26.2
-      '@babel/core': 7.26.9
-      '@babel/parser': 7.26.9
-      '@babel/types': 7.26.9
+      '@babel/core': 7.26.10
+      '@babel/parser': 7.27.0
+      '@babel/types': 7.27.0
       '@dcloudio/uni-i18n': 3.0.0-4020820240925001
       '@dcloudio/uni-shared': 3.0.0-4020820240925001
       '@intlify/core-base': 9.1.9
@@ -8283,12 +8235,6 @@ snapshots:
   '@dprint/markdown@0.17.8': {}
 
   '@dprint/toml@0.6.4': {}
-
-  '@emnapi/core@1.3.1':
-    dependencies:
-      '@emnapi/wasi-threads': 1.0.1
-      tslib: 2.8.1
-    optional: true
 
   '@emnapi/core@1.4.0':
     dependencies:
@@ -9327,13 +9273,6 @@ snapshots:
     dependencies:
       dayjs: 1.11.13
 
-  '@napi-rs/wasm-runtime@0.2.7':
-    dependencies:
-      '@emnapi/core': 1.3.1
-      '@emnapi/runtime': 1.3.1
-      '@tybys/wasm-util': 0.9.0
-    optional: true
-
   '@napi-rs/wasm-runtime@0.2.8':
     dependencies:
       '@emnapi/core': 1.4.0
@@ -9373,7 +9312,7 @@ snapshots:
 
   '@node-rs/xxhash-wasm32-wasi@1.7.6':
     dependencies:
-      '@napi-rs/wasm-runtime': 0.2.7
+      '@napi-rs/wasm-runtime': 0.2.8
     optional: true
 
   '@node-rs/xxhash-win32-arm64-msvc@1.7.6':
@@ -9762,7 +9701,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@uni-ku/bundle-optimizer@1.3.2(@vueuse/core@13.1.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
+  '@uni-ku/bundle-optimizer@1.3.3(@vueuse/core@13.1.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(sass@1.77.8)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-4020820240925001(@vueuse/core@13.1.0(vue@3.5.13(typescript@5.8.3)))(postcss@8.5.3)(rollup@4.40.0)(vue@3.5.13(typescript@5.8.3))
       '@node-rs/xxhash': 1.7.6
