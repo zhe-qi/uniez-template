@@ -3,8 +3,8 @@ import type { UtilityTypes } from '@/utils/utility';
 declare global {
   type GlobalUtilityTypes = UtilityTypes;
 
-  interface ParamsType {
-    [key: string]: any;
+  interface ParamsType<T = any> {
+    [key: string]: T;
   }
 
   type GetEnumType<T> = T[keyof T];

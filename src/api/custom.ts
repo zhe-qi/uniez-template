@@ -23,8 +23,9 @@ type ApiAppSysAuthLoginPostResponse = {
     token: string;
   };
 };
-export function apiAppSysAuthLoginPost(data: ApiAppSysAuthLoginPost):
-PromiseLike<ApiAppSysAuthLoginPostResponse> {
+export function apiAppSysAuthLoginPost(
+  data: ApiAppSysAuthLoginPost,
+): PromiseLike<ApiAppSysAuthLoginPostResponse> {
   return alovaInstance.Post('/api/login', data);
 }
 
@@ -38,7 +39,9 @@ type ApiAppSysAuthUserinfoGetResponse = {
     name: string;
   };
 };
-export function apiAppSysAuthUserinfoGet(data: ApiAppSysAuthUserinfoGet): PromiseLike<ApiAppSysAuthUserinfoGetResponse> {
+export function apiAppSysAuthUserinfoGet(
+  data: ApiAppSysAuthUserinfoGet,
+): PromiseLike<ApiAppSysAuthUserinfoGetResponse> {
   return alovaInstance.Get('/api/userinfo', {
     params: data,
     ignoreError: true,
