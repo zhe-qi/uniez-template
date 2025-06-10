@@ -31,6 +31,8 @@ export default antfu({
     'ts/consistent-type-definitions': 'off',
     'unused-imports/no-unused-vars': 'off',
     'eslint-comments/no-unlimited-disable': 'off',
+    'import/no-self-import': 'off',
+    'import/no-duplicates': 'off',
   },
   ignores: [
     './dist/*',
