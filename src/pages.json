@@ -94,7 +94,6 @@
       "^z-tabs": "@zxlee/z-tabs/components/z-tabs/z-tabs.vue"
     }
   },
-  "__esModule": true,
   "subPackages": [
     {
       "root": "pages-sub",

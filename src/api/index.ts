@@ -1,8 +1,8 @@
-import { ContentTypeEnum, ResultEnum } from '@/enums/httpEnum';
-import { getCache } from '@/utils';
 import AdapterUniapp from '@alova/adapter-uniapp';
 import { createAlova } from 'alova';
 import { isEqual } from 'radashi';
+import { ContentTypeEnum, ResultEnum } from '@/enums/httpEnum';
+import { getCache } from '@/utils';
 import { createApis, withConfigType } from './createApis';
 
 /**

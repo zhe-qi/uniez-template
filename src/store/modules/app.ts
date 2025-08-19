@@ -1,6 +1,6 @@
 import type { ConfigProviderThemeVars } from 'wot-design-uni';
-import { ThemeModeEnum } from '@/enums/appEnum';
 import { defineStore } from 'pinia';
+import { ThemeModeEnum } from '@/enums/appEnum';
 
 export const useAppStore = defineStore('AppStore', () => {
   /** 组件库动态主题，持久化示例 */

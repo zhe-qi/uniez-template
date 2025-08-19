@@ -29,7 +29,7 @@ onLoad((options) => {
 });
 
 const swiperHeight = ref(0);
-const tabList = ref(['测试1', '测试2', '测试3', '测试4']);
+const tabList = ref(['测试列表', '测试列表2', '测试列表3', '测试列表4', '测试列表5', '测试列表6', '测试列表7']);
 const current = ref(0);
 const pagePaging = ref<ZPagingRef>();
 const tabs = ref();
@@ -107,7 +107,7 @@ function handleClickLeft() {
   <view class="h-full">
     <z-paging ref="pagePaging" refresher-only @on-refresh="onRefresh" @scrolltolower="scrolltolower">
       <template #top>
-        <NavBar left-text="返回" safe-area-inset-top placeholder left-arrow :fixed="true" @click-left="handleClickLeft">
+        <NavBar left-text="返回" safe-area-inset-top left-arrow placeholder :fixed="true" @click-left="handleClickLeft">
           列表
         </NavBar>
       </template>

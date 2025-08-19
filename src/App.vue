@@ -31,9 +31,17 @@ onLaunch(async () => {
 </script>
 
 <style lang="postcss">
-page {
+page,
+html,
+body,
+#app {
   /** 这里设置所有页面背景色 */
   background-color: #f5f5f5;
+  @apply max-w-[750rpx] mx-auto;
+}
+
+.wd-tabbar {
+  @apply max-w-[750rpx] mx-auto;
 }
 
 /** 给内置 button 上色 */
