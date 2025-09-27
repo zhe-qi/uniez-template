@@ -7,20 +7,12 @@ import uniPages from '@uni-helper/vite-plugin-uni-pages';
  * @see https://github.com/uni-ku/bundle-optimizer
  */
 import Optimization from '@uni-ku/bundle-optimizer';
-import legacy from '@vitejs/plugin-legacy';
 import AutoImport from 'unplugin-auto-import/vite';
 
 import { plugins, subPackages } from './config';
 
 export async function getPlugins() {
   const unocss = await import('unocss/vite').then(i => i.default);
-
-  // h5通常都需要支持更低级的手机和浏览器，但是会增加打包体积和时间，所以自己权衡，默认开启
-  const legacyPlugin = process.env.UNI_PLATFORM === 'h5'
-    ? legacy({
-      targets: ['defaults', 'not IE 11'],
-    })
-    : null;
 
   return [
     uniLayouts(),
@@ -60,7 +52,6 @@ export async function getPlugins() {
       },
       logger: false,
     }),
-    ...(legacyPlugin ? [legacyPlugin] : []),
     ...plugins,
   ];
 }
