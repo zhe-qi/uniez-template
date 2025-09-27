@@ -1,14 +1,16 @@
-<route lang="json5">
-{
-  "name": "Webview",
-  "style": {
-    "navigationBarTitleText": ""
-  }
-}
-</route>
-
 <script lang="ts" setup>
 import type { WebViewOnMessageEvent } from '@uni-helper/uni-app-types';
+
+definePage({
+  name: 'Webview',
+  title: 'webview',
+  style: {
+    navigationBarTitleText: 'webview',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+});
 
 const url = ref();
 onLoad((op) => {

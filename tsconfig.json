@@ -11,7 +11,8 @@
       "z-paging/types",
       "@types/wechat-miniprogram",
       "@uni-helper/uni-app-types",
-      "wot-design-uni/global"
+      "wot-design-uni/global",
+      "@uni-helper/vite-plugin-uni-pages"
     ],
     "allowJs": true,
     "sourceMap": true

@@ -1,18 +1,17 @@
-<route lang="json5">
-{
-  "name": "TestPage",
-  "style": {
-    "navigationBarTitleText": "测试页面",
-    "navigationStyle": "custom"
-  },
-  "meta": {
-    "ignoreAuth": true
-  }
-}
-</route>
-
 <script lang="ts" setup>
 import NavBar from '@/components/nav-bar/nav-bar.vue';
+
+definePage({
+  name: 'TestPage',
+  title: '测试页面',
+  style: {
+    navigationBarTitleText: '测试页面',
+    navigationStyle: 'custom',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+});
 
 const components = [
   'desc',

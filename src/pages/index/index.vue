@@ -1,19 +1,22 @@
-<route lang="json5" type="home">
-{
-  "name": "Index",
-  "style": {
-    "navigationBarTitleText": "首页",
-    "navigationStyle": "custom"
-  },
-  "meta": {
-    "ignoreAuth": true
-  }
-}
-</route>
-
 <script setup lang="ts">
 import NavBar from '@/components/nav-bar/nav-bar.vue';
 import TabBar from '@/components/tab-bar/tab-bar.vue';
+
+definePage({
+  name: 'Index',
+  title: '首页',
+  style: {
+    navigationBarTitleText: '首页',
+    navigationStyle: 'custom',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+  tabBar: {
+    index: 0,
+  },
+  type: 'home',
+});
 
 const router = useRouter();
 const title = ref('一个“功能”和“开发体验”优先的 uniapp 的模板');

@@ -1,18 +1,17 @@
-<route lang="json5">
-{
-  "name": "Theme",
-  "style": {
-    "navigationBarTitleText": "动态主题",
-    "navigationStyle": "custom"
-  },
-  "meta": {
-    "ignoreAuth": true
-  }
-}
-</route>
-
 <script lang="ts" setup>
 import NavBar from '@/components/nav-bar/nav-bar.vue';
+
+definePage({
+  name: 'Theme',
+  title: '动态主题',
+  style: {
+    navigationBarTitleText: '动态主题',
+    navigationStyle: 'custom',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+});
 
 const appStore = useAppStore();
 

@@ -1,19 +1,21 @@
-<route lang="json5">
-{
-  "name": "My",
-  "style": {
-    "navigationBarTitleText": "我的",
-    "navigationStyle": "custom"
-  },
-  "meta": {
-    "ignoreAuth": true
-  }
-}
-</route>
-
 <script lang="ts" setup>
 import NavBar from '@/components/nav-bar/nav-bar.vue';
 import TabBar from '@/components/tab-bar/tab-bar.vue';
+
+definePage({
+  name: 'My',
+  title: '我的',
+  style: {
+    navigationBarTitleText: '我的',
+    navigationStyle: 'custom',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+  tabBar: {
+    index: 1,
+  },
+});
 </script>
 
 <template>

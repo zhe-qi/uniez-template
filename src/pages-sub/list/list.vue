@@ -1,20 +1,19 @@
-<route lang="json5">
-{
-  "name": "List",
-  "style": {
-    "navigationBarTitleText": "",
-    "navigationStyle": "custom",
-  },
-  "meta": {
-    "ignoreAuth": true
-  }
-}
-</route>
-
 <script lang="ts" setup>
 import type { SwiperOnAnimationfinishEvent, SwiperOnTransitionEvent } from '@uni-helper/uni-app-types';
 import NavBar from '@/components/nav-bar/nav-bar.vue';
 import StickySwiperNextItem from './components/sticky-swiper-next-item.vue';
+
+definePage({
+  name: 'List',
+  title: '列表',
+  style: {
+    navigationBarTitleText: '列表',
+    navigationStyle: 'custom',
+  },
+  meta: {
+    ignoreAuth: true,
+  },
+});
 
 const appStore = useAppStore();
 
@@ -50,7 +49,7 @@ function onRefresh() {
 
 // 当滚动到底部时，通知当前显示的列表加载更多
 function scrolltolower() {
-  swiperList.value[current.value].doLoadMore();
+  swiperList.value[current.value]?.doLoadMore();
 }
 
 // swiper滑动中

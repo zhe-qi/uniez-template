@@ -5,6 +5,7 @@
       "path": "pages/index/index",
       "type": "home",
       "name": "Index",
+      "title": "首页",
       "style": {
         "navigationBarTitleText": "首页",
         "navigationStyle": "custom"
@@ -16,9 +17,10 @@
     {
       "path": "pages/my/my",
       "type": "page",
-      "name": "My",
+      "name": "Home",
+      "title": "Home",
       "style": {
-        "navigationBarTitleText": "我的",
+        "navigationBarTitleText": "Home",
         "navigationStyle": "custom"
       },
       "meta": {
@@ -29,6 +31,7 @@
       "path": "pages/test-page/test-page",
       "type": "page",
       "name": "TestPage",
+      "title": "测试页面",
       "style": {
         "navigationBarTitleText": "测试页面",
         "navigationStyle": "custom"
@@ -41,6 +44,7 @@
       "path": "pages/theme/theme",
       "type": "page",
       "name": "Theme",
+      "title": "动态主题",
       "style": {
         "navigationBarTitleText": "动态主题",
         "navigationStyle": "custom"
@@ -53,8 +57,12 @@
       "path": "pages/webview/webview",
       "type": "page",
       "name": "Webview",
+      "title": "webview",
       "style": {
-        "navigationBarTitleText": ""
+        "navigationBarTitleText": "webview"
+      },
+      "meta": {
+        "ignoreAuth": true
       }
     }
   ],
@@ -105,8 +113,9 @@
           "path": "list/list",
           "type": "page",
           "name": "List",
+          "title": "列表",
           "style": {
-            "navigationBarTitleText": "",
+            "navigationBarTitleText": "列表",
             "navigationStyle": "custom"
           },
           "meta": {
