@@ -17,10 +17,10 @@
     {
       "path": "pages/my/my",
       "type": "page",
-      "name": "Home",
-      "title": "Home",
+      "name": "My",
+      "title": "我的",
       "style": {
-        "navigationBarTitleText": "Home",
+        "navigationBarTitleText": "我的",
         "navigationStyle": "custom"
       },
       "meta": {
